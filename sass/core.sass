@@ -1,0 +1,395 @@
+@import "reset"
+@import "variable"
+
+
+html
+  background: $main-white
+  box-sizing: border-box
+  height: 100%
+  //background-image: url(/Desktop_design_updated.png)
+  background-repeat: no-repeat
+  background-size: cover
+  font-family: "Prompt Medium", sans-serif
+
+body
+  display: flex
+  flex-direction: column
+  font-size: 18px
+  //opacity: 0.5
+  font-family: "Prompt Medium", sans-serif
+main
+  flex-grow: 1
+
+footer
+  background-color: $big-stone
+
+
+.header
+  height: 100px
+  box-shadow: 0px 10px 7px rgba(0,0,0,0.1)
+.h
+  height: inherit
+.menu, .menu-nav
+  display: flex
+  align-items: center
+  height: inherit
+.menu-tools
+  display: flex
+  flex-direction: column
+  margin-left: auto
+.logo
+  height: inherit
+  width: 168px
+  line-height: 136px
+  .logo-item
+    width: inherit
+.menu-nav
+  padding-left: 124px
+  margin: 0
+.menu-item
+  position: relative
+  padding-right: 38px
+  height: inherit
+  line-height: 107px
+.nav-link:hover:before
+  content: ""
+  position: absolute
+  bottom: -10px
+  background: #e91150
+  width: 14px
+  height: 2px
+a.nav-link
+  position: relative
+  font-size: 1em
+  font-family: "DIN Pro Medium", sans-serif
+  text-transform: uppercase
+  text-decoration: none
+  color: $pink
+.nav-link:hover
+  color: $red
+
+.menu-tools
+  height: inherit
+  .tools
+    display: flex
+    align-self: flex-end
+    align-items: flex-end
+    height: 50px
+    text-transform: uppercase
+    font-family: 'Din Pro Regular'
+    font-size: 15px
+  .login
+    position: relative
+    padding-right: 17px
+    &:after
+      content: ""
+      position: absolute
+      height: 13px
+      width: 2px
+      right: 6px
+      background-color: $pink
+.talent
+  align-items: flex-start!important
+  padding-top: 6px
+  .talent-card
+    font-size: 1.19em
+.login, .signup, .talent-card
+  color: $pink
+
+.hero
+  padding-top: 60px
+  .herol-title
+    text-transform: uppercase
+    font-size: 46px
+    font-family: Open Sans,sans-serif
+  .hero-img
+    .overlay
+      position: absolute
+      top: 0px
+      bottom: 0px
+      right: 0px
+      left: 0px
+      background: rgba(237,237,237,0.8);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%, white 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 )
+
+.btn
+  margin-top: 10px
+  border: none
+  border-radius: 0
+  text-transform: uppercase
+  box-shadow: 5px 9px 7px rgba(0,0,0,0.1)
+.btn-small
+  font-size: 1em
+  padding: 20px 29px
+.btn-red
+  color: $main-white
+  background-color: $red
+.btn-red
+  &:hover
+    color: $main-white
+  &:focus
+    color: $main-white
+.btn
+  outline: none
+  &:focus
+    outline: none
+.btn-group
+  margin-right: -35px
+  .btn
+    margin-right: 30px
+
+.hero-text-block
+  display: block
+  margin-top: 100px
+.text-big
+  font-size: 33px
+  color: $red
+.hero
+  .text-item:not(:first-child)
+    padding-top: 30px
+.text-left
+  padding-left: 28px
+.hero-text-block .text-item:nth-child(4)
+  padding-right: 246px
+.hero-text-block .text-item:nth-child(5)
+  padding-right: 146px
+.hero-text-block .text-item:nth-child(6)
+  padding-right: 5.556rem
+
+//search form
+*:focus
+  outline: none
+
+.form-block
+  padding-bottom: 43px
+.search-form
+  .search-form-fields
+    margin-top: 93px
+    border-bottom: 1px solid #999a9e
+    border-top: 1px solid #999a9e
+    display: flex
+    justify-content: space-around
+    .btn
+      margin-top: 0
+      margin-right: 0
+      box-shadow: none
+    .bs-caret
+      display: none
+    .btn-group
+      display: flex!important
+      align-items: center
+    .btn-group.bootstrap-select.open:before
+      position: absolute
+      top: 28px
+      left: 15px
+      content: ''
+      width: 0
+      height: 0
+      border-left: 7px solid transparent
+      border-right: 7px solid transparent
+      border-bottom: 7px solid white
+      z-index: 100000000000
+    .btn-group.bootstrap-select.open:after
+      position: absolute
+      top: 26px
+      left: 13px
+      content: ''
+      width: 0
+      height: 0
+      border-left: 9px solid transparent
+      border-right: 9px solid transparent
+      border-bottom: 9px solid #999a9e
+      z-index: 100000
+    .dropdown-menu
+      border: 0
+      border-radius: 0
+    span.filter-option
+      outline: none
+      font-size: 16px
+    .btn-group button:not(:last-child):before
+      content: ""
+      position: absolute
+      width: 3px
+      height: 19px
+      background: $red
+      right: 23px
+      z-index: 100
+    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+      width: 212px
+
+    .btn-group.open
+    .dropdown-toggle
+      box-shadow: none!important
+    .open>.dropdown-toggle.btn-default:focus,
+    .open>.dropdown-toggle.btn-default:hover
+      border: none
+      background: $main-white
+      color: $red
+    input.form-control:focus
+      border-color: none!important
+      outline: 0
+      box-shadow: none
+    .form-control
+      display: block
+      width: 100%
+      height: 34px
+      padding: 6px 12px
+      font-size: 14px
+      line-height: 1.42857143
+      color: #555
+      background-color: #fff
+      background-image: none
+      border: 2px solid $red
+      border-radius: 4px
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+      trasition: 5s
+    .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default
+      color: #333
+      background-color: $main-white
+      border-color: none
+    div.dropdown-menu .open[role=combobox]
+      padding-top: 0px
+      margin-top: 0px
+    .bs-searchbox
+      padding: 0px
+    .bootstrap-select .dropdown-toggle:focus
+      outline: none !important
+      outline: none !important
+      outline-offset: 0px !important
+    .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover
+      color: #333
+      background-color: #ffffff
+      outline-offset: 0px
+      outline: none
+    .bootstrap-select > .dropdown-toggle.bs-placeholder
+      color: #808080
+    .bootstrap-select > .dropdown-toggle.bs-placeholder:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:active
+      background-color: $main-white
+    .form-control
+      border-radius: 0px
+      outline: none!important
+    .dropdown-menu li:not(:last-child)
+      border-bottom: 1px solid #999a9e
+    .dropdown-menu>li>a
+      font-size: 13px
+      padding: 17px 23px
+    .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover
+      color: #262626
+      text-decoration: none
+      background-color: $main-white
+      border: 2px solid $red
+    .bootstrap-select.btn-group .dropdown-menu li
+      position: relative
+      outline: none
+    .input-group
+      display: flex
+  .submit
+    margin-top: 55px
+    text-align: center
+    .btn-yellow
+      background-color: $dirty-yellow
+.btn-big
+  padding: 17px 30px
+  font-size: 18px
+.grey
+  background-color: $light-grey
+
+section
+  padding-top: 94px
+  padding-bottom: 75px
+.section-title
+  font-size: 42px
+  color: black
+  text-transform: uppercase
+  margin-left: 29px
+  margin-bottom: 15px
+  &:before
+    content: ""
+    position: absolute
+    width: 4px
+    height: 39px
+    background: $red
+    left: 5px
+.sub-title
+  margin-left: 32px
+  p
+    margin-top: 25px
+  .sub-p
+    font-size: 16px
+.icon-box
+  margin-top: 80px
+  .icon
+    img
+      width: 100px
+  .icon-text
+    text-transform: uppercase
+    font-size: 16px
+    color: $red
+    padding-top: 20px
+  .col-md-3:nth-child(n+5)
+      margin-top: 50px
+.main-footer
+  position: relative
+.footer-logo
+  margin-top: 50px
+  display: block
+.footer-menu
+  font-family: "Open Sans", sans-serif
+  .footer-menu-title
+    display: block
+    font-size: 20px
+    color: white
+    text-transform: uppercase
+    margin-top: 50px
+    margin-bottom: 30px
+
+  .menu
+    display: block
+    margin: 0
+    padding: 0
+    .menu-item
+      line-height: 40px
+      padding: 0
+      a
+        color: #9aa8b8
+        &:hover
+          color: white
+    .menu-child
+      padding: 0
+      .child-item
+        line-height: 20px
+        &:before
+          color: #9aa8b8
+          content: "•"
+          padding-right: 10px
+
+.footer-img
+  position: absolute
+  bottom: 0px
+  right: 0px
+  img
+    width: 390px
+    opacity: 0.5
+.sub-footer
+  background-color: #1d272e
+  padding: 30px 0px
+  .copy-right
+    color: white
+    p:nth-child(1)
+      font-weight: 800
+      font-size: 16px
+
+.footer-img
+  .overlay
+    position: absolute
+    top: 0px
+    bottom: 0px
+    right: 0px
+    left: 0px
+    background: linear-gradient(to bottom, rgba(52, 61, 71, 0) 36%, #343d47 100%)
+
+
+
+
