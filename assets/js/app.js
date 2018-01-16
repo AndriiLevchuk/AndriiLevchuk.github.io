@@ -28,6 +28,20 @@
         $(".calendar.right .calendar-table").css("display","block");
     }
 
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 300) {
+            $('header').addClass('fixed-header');
+        }
+        else {
+            $('header').removeClass('fixed-header');
+        }
+    });
+
+    $('.menu-item .dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+    }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    });
 
 
 

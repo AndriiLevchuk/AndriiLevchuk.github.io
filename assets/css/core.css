@@ -562,8 +562,21 @@ footer {
   text-align: center;
 }
 
-.search-form .submit .btn-yellow {
+.btn-yellow {
   background-color: #fdd672;
+}
+
+.btn-stone {
+  background: #343d47;
+  color: #ffffff;
+}
+
+.btn-stone:hover {
+  color: #ffffff;
+}
+
+.btn-stone:focus {
+  color: #ffffff;
 }
 
 .btn-big {
@@ -621,6 +634,7 @@ section {
 .icon-box .icon-text {
   text-transform: uppercase;
   font-size: 16px;
+  font-weight: 600;
   color: #e91150;
   padding-top: 20px;
 }
@@ -911,12 +925,18 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   font-size: 0.89em;
   color: #e91150;
   text-transform: uppercase;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .service-box-1-link:hover {
   color: #e91150;
   text-decoration: none;
   border: 2px solid #e91150;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .service-box-1-link .service-box-1-image,
@@ -1016,6 +1036,9 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .icon-box-wide-item {
@@ -1041,6 +1064,9 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
 
 .icon-box-wide:hover {
   border: 2px solid #e91150;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .icon-box-wide-item {
@@ -1138,6 +1164,55 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   -o-transition: 1s;
   transition: 1s;
   opacity: 1;
+}
+
+.list {
+  position: relative;
+}
+
+.list:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: url(/assets/img/me-list-style.svg);
+  background-repeat: no-repeat;
+  left: -40px;
+  width: 11px;
+  height: 20px;
+}
+
+.pool-box {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.pool-box .text {
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.pool-box img {
+  width: 90%;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #ffffff;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 @media screen and (min-width: 320px) and (max-width: 920px) {
