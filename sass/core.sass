@@ -54,22 +54,23 @@ footer
   padding-right: 38px
   height: inherit
   line-height: 107px
-.nav-link:hover:before
-  content: ""
-  position: absolute
-  bottom: -10px
-  background: #e91150
-  width: 14px
-  height: 2px
-a.nav-link
-  position: relative
-  font-size: 1em
-  font-family: "DIN Pro Medium", sans-serif
-  text-transform: uppercase
-  text-decoration: none
-  color: $pink
-.nav-link:hover
-  color: $red
+.header
+  .nav-link:hover:before
+    content: ""
+    position: absolute
+    bottom: -10px
+    background: #e91150
+    width: 14px
+    height: 2px
+  a.nav-link
+    position: relative
+    font-size: 1em
+    font-family: "DIN Pro Medium", sans-serif
+    text-transform: uppercase
+    text-decoration: none
+    color: $pink
+  .nav-link:hover
+    color: $red
 
 .menu-tools
   height: inherit
@@ -83,7 +84,7 @@ a.nav-link
     font-size: 15px
   .login
     position: relative
-    padding-right: 17px
+    padding-right: 0.99em
     &:after
       content: ""
       position: absolute
@@ -105,11 +106,12 @@ a.nav-link
 
 .hero
   padding-top: 60px
-  .herol-title
+  .hero-title
     text-transform: uppercase
-    font-size: 46px
+    font-size: 2.556em
     font-family: 'Nunito Sans',sans-serif
   .hero-img
+    margin-top: 30px
     .overlay
       position: absolute
       top: 0px
@@ -236,6 +238,7 @@ a.nav-link
       border: none
       background: $main-white
       color: $red
+
     input.form-control:focus
       border-color: none!important
       outline: 0
@@ -277,6 +280,7 @@ a.nav-link
       color: #808080
     .bootstrap-select > .dropdown-toggle.bs-placeholder:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:active
       background-color: $main-white
+      color: $red
     .form-control
       border-radius: 0px
       outline: none!important
@@ -310,7 +314,7 @@ section
   padding-top: 94px
   padding-bottom: 75px
 .section-title
-  font-size: 42px
+  font-size: 2.333em
   color: black
   text-transform: uppercase
   margin-left: 29px
@@ -344,6 +348,8 @@ section
 .main-footer
   position: relative
   padding-bottom: 50px
+  .nav-link
+    font-family: "Open Sans", sans-serif
 .footer-logo
   margin-top: 50px
   display: block
@@ -481,8 +487,10 @@ i.to:before
   color: #808080
   &:hover
     color: $red
+    background-color: $main-white
 btn-default:active.focus, .search-form .search-form-fields .btn-default:active:focus, .search-form .search-form-fields .btn-default:active:hover
   background: $main-white
+  color: $red
 
 .daterangepicker.dropdown-menu.ltr.show-calendar.opensright:after
   position: absolute
@@ -507,6 +515,155 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   border-bottom: 14px solid white
   z-index: 100000000000
 
+
+//ssection white
+.white
+  background-color: $main-white
+
+//service box 1
+.service-box-1
+  margin-top: 60px
+.service-box-1-image
+  width: 100%
+.service-box-1-link
+  display: flex
+  flex-direction: column
+  min-height: 300px
+  justify-content: space-around
+  border: 2px solid transparent
+  font-size: 0.89em
+  color: $red
+  text-transform: uppercase
+  &:hover
+    color: $red
+    text-decoration: none
+    border: 2px solid $red
+  .service-box-1-image,
+  .service-box-text
+    padding: 0px 20px 0px 20px
+.service-box-text
+.button-block
+  display: block
+  margin-top: 30px
+
+//icon-box
+.icon-box-content-left
+  display: flex
+.icon-box-content-wraper
+  display: flex
+  flex-direction: column
+  justify-content: center
+.icon-box-title
+  line-height: 17px
+  font-size: 1em
+  font-weight: 600
+  padding-bottom: 20px
+  text-transform: uppercase
+  color: $red
+.icon-box-content
+  font-weight: 100
+  font-size: 0.89em
+  ul
+    padding-left: 0
+.icon-box
+  padding-left: 35px
+  font-weight: 100
+  font-family: "Open sans", sans-serif
+  line-height: 24px
+.icon-box-image
+  float: left
+  img
+    width: 100px
+.select-box
+  display: inline-block
+  width: 100%
+  margin-top: 60px
+  background-color: $red
+  color: white
+  .icon-box-title
+    color: white
+  .icon-box-image
+    margin-right: 10px
+    img
+     width: 31px
+  .icon-box
+    padding-top: 30px
+    padding-bottom: 30px
+    margin-top: 0
+
+.icon-box-wide
+  display: flex
+.icon-box-wide-item
+  display: flex
+  align-items: center
+
+.no-gutter
+  padding: 0
+
+.icon-box-wide
+  border: 2px solid transparent
+  padding: 40px 0px 40px 35px
+  width: 100%
+  &:hover
+    border: 2px solid $red
+.icon-box-wide-item
+  display: flex
+  width: 50%
+  justify-content: space-around
+.chevron
+  font-size: 2.2em
+  color: #bebec0
+.icon-box-wide-item
+  &:nth-child(n+2)
+    justify-content: space-evenly
+
+.blue
+  background-color: #d8d8d8
+
+.card-box
+  margin-top: 60px
+.card
+  box-shadow: 0px 0px 1px #000
+  border: 2px solid transparent
+  transition: 1s
+  opacity: 1
+  text-align: center
+  &:hover
+    border: 2px solid $red
+    transition: 1s
+    opacity: 1
+  &:hover .card-footer .text
+    background: $red
+    transition: 1s
+    opacity: 1
+.card-header
+  position: relative
+  padding: 42px 0px
+  font-size: 0.89em
+  text-transform: uppercase
+  font-weight: 600
+  &:after
+    content: ""
+    position: absolute
+    left: 0px
+    right: 0px
+    bottom: 0px
+    margin: auto
+    width: 30px
+    height: 3px
+    background: $red
+.card-content
+  padding: 100px 0
+  text-align: center
+.card-footer
+  .number
+    padding: 20px 0px
+  .text
+    color: white
+    background-color: $big-stone
+    padding: 20px 20px
+    transition: 1s
+    opacity: 1
 @media screen and (min-width: 320px) and (max-width: 920px)
   .search-form-fields
     flex-direction: column
@@ -514,3 +671,7 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
     align-items: center
   .btn-group
     margin-right: 0px
+
+
+
+@import "media"

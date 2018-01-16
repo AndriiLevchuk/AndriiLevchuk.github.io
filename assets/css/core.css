@@ -168,7 +168,7 @@ footer {
   line-height: 107px;
 }
 
-.nav-link:hover:before {
+.header .nav-link:hover:before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -177,7 +177,7 @@ footer {
   height: 2px;
 }
 
-a.nav-link {
+.header a.nav-link {
   position: relative;
   font-size: 1em;
   font-family: "DIN Pro Medium", sans-serif;
@@ -186,7 +186,7 @@ a.nav-link {
   color: #808080;
 }
 
-.nav-link:hover {
+.header .nav-link:hover {
   color: #e91150;
 }
 
@@ -214,7 +214,7 @@ a.nav-link {
 
 .menu-tools .login {
   position: relative;
-  padding-right: 17px;
+  padding-right: 0.99em;
 }
 
 .menu-tools .login:after {
@@ -252,10 +252,14 @@ a.nav-link {
   padding-top: 60px;
 }
 
-.hero .herol-title {
+.hero .hero-title {
   text-transform: uppercase;
-  font-size: 46px;
+  font-size: 2.556em;
   font-family: 'Nunito Sans',sans-serif;
+}
+
+.hero .hero-img {
+  margin-top: 30px;
 }
 
 .hero .hero-img .overlay {
@@ -516,6 +520,7 @@ a.nav-link {
 
 .search-form .search-form-fields .bootstrap-select > .dropdown-toggle.bs-placeholder:hover, .search-form .search-form-fields .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .search-form .search-form-fields .bootstrap-select > .dropdown-toggle.bs-placeholder:active {
   background-color: #ffffff;
+  color: #e91150;
 }
 
 .search-form .search-form-fields .form-control {
@@ -576,7 +581,7 @@ section {
 }
 
 .section-title {
-  font-size: 42px;
+  font-size: 2.333em;
   color: black;
   text-transform: uppercase;
   margin-left: 29px;
@@ -627,6 +632,10 @@ section {
 .main-footer {
   position: relative;
   padding-bottom: 50px;
+}
+
+.main-footer .nav-link {
+  font-family: "Open Sans", sans-serif;
 }
 
 .footer-logo {
@@ -838,10 +847,12 @@ i.to:before {
 
 .search-form .search-form-fields .dropdown-toggle:hover {
   color: #e91150;
+  background-color: #ffffff;
 }
 
 btn-default:active.focus, .search-form .search-form-fields .btn-default:active:focus, .search-form .search-form-fields .btn-default:active:hover {
   background: #ffffff;
+  color: #e91150;
 }
 
 .daterangepicker.dropdown-menu.ltr.show-calendar.opensright:after {
@@ -870,6 +881,265 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   z-index: 100000000000;
 }
 
+.white {
+  background-color: #ffffff;
+}
+
+.service-box-1 {
+  margin-top: 60px;
+}
+
+.service-box-1-image {
+  width: 100%;
+}
+
+.service-box-1-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 300px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  border: 2px solid transparent;
+  font-size: 0.89em;
+  color: #e91150;
+  text-transform: uppercase;
+}
+
+.service-box-1-link:hover {
+  color: #e91150;
+  text-decoration: none;
+  border: 2px solid #e91150;
+}
+
+.service-box-1-link .service-box-1-image,
+.service-box-1-link .service-box-text {
+  padding: 0px 20px 0px 20px;
+}
+
+.button-block {
+  display: block;
+  margin-top: 30px;
+}
+
+.icon-box-content-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon-box-content-wraper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon-box-title {
+  line-height: 17px;
+  font-size: 1em;
+  font-weight: 600;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: #e91150;
+}
+
+.icon-box-content {
+  font-weight: 100;
+  font-size: 0.89em;
+}
+
+.icon-box-content ul {
+  padding-left: 0;
+}
+
+.icon-box {
+  padding-left: 35px;
+  font-weight: 100;
+  font-family: "Open sans", sans-serif;
+  line-height: 24px;
+}
+
+.icon-box-image {
+  float: left;
+}
+
+.icon-box-image img {
+  width: 100px;
+}
+
+.select-box {
+  display: inline-block;
+  width: 100%;
+  margin-top: 60px;
+  background-color: #e91150;
+  color: white;
+}
+
+.select-box .icon-box-title {
+  color: white;
+}
+
+.select-box .icon-box-image {
+  margin-right: 10px;
+}
+
+.select-box .icon-box-image img {
+  width: 31px;
+}
+
+.select-box .icon-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 0;
+}
+
+.icon-box-wide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon-box-wide-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.no-gutter {
+  padding: 0;
+}
+
+.icon-box-wide {
+  border: 2px solid transparent;
+  padding: 40px 0px 40px 35px;
+  width: 100%;
+}
+
+.icon-box-wide:hover {
+  border: 2px solid #e91150;
+}
+
+.icon-box-wide-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.chevron {
+  font-size: 2.2em;
+  color: #bebec0;
+}
+
+.icon-box-wide-item:nth-child(n+2) {
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.blue {
+  background-color: #d8d8d8;
+}
+
+.card-box {
+  margin-top: 60px;
+}
+
+.card {
+  -webkit-box-shadow: 0px 0px 1px #000;
+          box-shadow: 0px 0px 1px #000;
+  border: 2px solid transparent;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+  text-align: center;
+}
+
+.card:hover {
+  border: 2px solid #e91150;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+.card:hover .card-footer .text {
+  background: #e91150;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
+.card-header {
+  position: relative;
+  padding: 42px 0px;
+  font-size: 0.89em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.card-header:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 30px;
+  height: 3px;
+  background: #e91150;
+}
+
+.card-content {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.card-footer .number {
+  padding: 20px 0px;
+}
+
+.card-footer .text {
+  color: white;
+  background-color: #343d47;
+  padding: 20px 20px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+}
+
 @media screen and (min-width: 320px) and (max-width: 920px) {
   .search-form-fields {
     -webkit-box-orient: vertical;
@@ -887,3 +1157,45 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
     margin-right: 0px;
   }
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (landscape) ----------- */
+/* Smartphones (portrait) ----------- */
+/* iPads (portrait and landscape) ----------- */
+/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .header a.nav-link {
+    font-size: 0.8em;
+  }
+  .login, .signup {
+    font-size: 0.85em;
+  }
+  .talent .talent-card, .talent .talent-card i {
+    font-size: 1em;
+  }
+  .hero .hero-title {
+    font-size: 2em;
+  }
+  .btn-small {
+    font-size: 0.8em;
+  }
+  .section-title {
+    font-size: 2em;
+  }
+  .section-title:before {
+    height: 31px;
+  }
+  .footer-menu .menu .menu-item {
+    line-height: 31px;
+  }
+  .footer-menu .menu .menu-child .child-item {
+    line-height: 25px;
+  }
+}
+
+/* Large screens ----------- */
+/* iPhone 5 (portrait & landscape)----------- */
+/* iPhone 5 (landscape)----------- */
+/* iPhone 5 (portrait)----------- */
