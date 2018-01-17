@@ -17,9 +17,9 @@
         $("#config-demo").append(start + ' - ' + end);
 
     } );
-    $("#config-demo").click(function () {
-        $("input[name=daterangepicker_start]").focus();
-    });
+    // $("#config-demo").click(function () {
+    //     $("input[name=daterangepicker_start]").focus();
+    // });
     if($("input[name=daterangepicker_start]").focus()){
         $(".calendar.left .calendar-table").css("display","block");
         $(".calendar.right .calendar-table").css("display","none");
@@ -27,23 +27,18 @@
         $(".calendar.left .calendar-table").css("display","none");
         $(".calendar.right .calendar-table").css("display","block");
     }
+    // $("#config-demo").hover(function () {
+    //     $(".daterangepicker.dropdown-menu").css("display","block");
+    // });
 
-    $(window).scroll(function(){
-        if ($(window).scrollTop() >= 300) {
-            $('header').addClass('fixed-header');
-        }
-        else {
-            $('header').removeClass('fixed-header');
-        }
-    });
 
-    $('.menu-item .dropdown').hover(function() {
+    $('ul.menu-nav li.dropdown').hover(function() {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
     }, function() {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
     });
 
-
+    $(".dropdown-menu.open [role=combobox]").append("<div></div>");
 
 
     // $(function() {
