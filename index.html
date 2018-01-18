@@ -16,13 +16,13 @@
 </head>
 <body>
 <header id="header" class="header fixed-header">
-    <div class="container h">
+    <div class="container-fluid h">
         <nav class="navbar " role="navigation">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <div class="logo"><img src="assets/img/me-logo.svg" alt="" class="logo-item"></div>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-animations" aria-expanded="true">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-animations" aria-expanded="false" aria-controls="bs-example-navbar-collapse-animations">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -30,7 +30,7 @@
                     </button>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="navbar-collapse collaps" id="bs-example-navbar-collapse-animations" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft" aria-expanded="true" style="">
+                <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-animations" data-hover="" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft" aria-expanded="false">
                     <ul class=" nav navbar-nav navbar-left">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown</span></a>
@@ -45,7 +45,7 @@
                                 <li><a href="#">One more separated link</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown open">
+                        <li class="dropdown ">
                             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="true">Dropdown 1 </a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="#">Action</a></li>

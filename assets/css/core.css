@@ -1625,21 +1625,21 @@ span.filter-option.pull-left:before {
   .navbar-collapse .nav.navbar-nav {
     background: white;
     display: block;
+    height: auto;
   }
   .navbar-left {
     margin: 0;
   }
   .navbar-collapse {
-    display: block;
-  }
-  .navbar-collapse .nav.navbar-nav {
-    display: block;
-    height: auto;
-    margin-top: -2px;
-    display: none;
-  }
-  .navbar-nav {
     margin: 0;
+    -webkit-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+  }
+  .nav.navbar-nav.navbar-right {
+    margin: 0;
+  }
+  header .container-fluid {
+    padding: 0;
   }
 }
 
