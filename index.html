@@ -17,112 +17,204 @@
 <body>
 <header id="header" class="header fixed-header">
     <div class="container h">
-        <nav class="menu">
-            <div class="logo"><img src="assets/img/me-logo.svg" alt="" class="logo-item"></div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="menu-nav">
-                <li class="menu-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="menu1" data-toggle="dropdown" data-hover="dropdown">About us</a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">What is MethodExpress</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Business Problems We Solve</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Our Approach- How it works</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Domains of Knowledge</a></li>
+        <nav class="navbar " role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <div class="logo"><img src="assets/img/me-logo.svg" alt="" class="logo-item"></div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-animations" aria-expanded="true">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-collapse collaps" id="bs-example-navbar-collapse-animations" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft" aria-expanded="true" style="">
+                    <ul class=" nav navbar-nav navbar-left">
                         <li class="dropdown">
-                            <a class="test" tabindex="-1" href="#">Types of Offerings<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li class="">
-                                    <a class="test" href="#">Professional Services</a>
-                                    <a class="test" href="#">Staff Outsourcing</a>
-                                    <a class="test" href="#">Training & Hands on Coaching</a>
-                                </li>
+                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown</span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class=""><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
                             </ul>
                         </li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Our Track Record</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Our Value Proposition & Promise</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Meet Some of the MethodExpress Talent</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">PDF Company Profile</a></li>
-                    </ul>
-                </li>
-
-
-
-
-
-
-
-
-
-
-
-
-                <li class="menu-item"><a href="#" class="nav-link">How it works</a></li>
-                <li class="menu-item"><a href="#" class="nav-link">Full menu</a></li><ul class="nav navbar-nav">
-                <li class="dropdown dropdown-large">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">...</a>
-                    <ul class="dropdown-menu dropdown-menu-large container row">
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">ABOUT METHODEXPRESS</li>
-                                <li><a href="#">What is MethodExpress</a></li>
-                                <li><a href="#">Business Problems We Solve</a></li>
-                                <li><a href="#">Our Approach- How it works</a></li>
-                                <li><a href="#">Domains of Knowledge</a></li>
-                                <li><a href="#">Types of Offerings</a>
-                                    <ul>
-                                        <li><a href="#">Professional Services</a></li>
-                                        <li><a href="#">Staff Outsourcing</a></li>
-                                        <li><a href="#">Training & Hands on Coaching</a></li>
+                        <li class="dropdown open">
+                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="true">Dropdown 1 </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Another dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Our Track Record</a></li>
-                                <li><a href="#">Our Value Proposition & Promise</a></li>
-                                <li><a href="#">Meet Some of the MethodExpress Talent</a></li>
-                                <li><a href="#">PDF Company Profile</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">CLIENT</li>
-                                <li><a href="#">Submit Request</a></li>
-                                <li><a href="#">Our Edge, Your Advantage</a></li>
-                                <li><a href="#">FAQs- Client</a></li>
-                                <li><a href="#">Privacy Policy- Client</a></li>
-                                <li><a href="#">SatisfactionGuaranteed Policy</a></li>
+                                <li class="dropdown">
+                                    <a href="#">Another dropdown 2 <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li class="dropdown">
+                                            <a href="#">Another dropdown <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Something else here</a></li>
                                 <li class="divider"></li>
-                                <li class="dropdown-header">TALENT</li>
-                                <li><a href="#">List Your Talent</a></li>
-                                <li><a href="#">Talent info & FAQs</a></li>
-                                <li><a href="#">Talent Booklet- PDF</a></li>
-                                <li><a href="#">Privacy Policy -Talent</a></li>
-                            </ul>
-                        </li>
-                        <li class="col-sm-3">
-                            <ul>
-                                <li class="dropdown-header">TALENT</li>
-                                <li><a href="#">Submit Training Request</a></li>
-                                <li><a href="#">Training Programs</a></li>
-                                <li><a href="#">About Learn Pool</a></li>
+                                <li><a href="#">Separated link</a></li>
                                 <li class="divider"></li>
-                                <li class="dropdown-header">TALENT</li>
-                                <li><a href="#">Become A Partner</a></li>
+                                <li><a href="#">One more separated link</a></li>
                             </ul>
                         </li>
                     </ul>
-                </li>
-            </ul>
-            </ul>
-            </div>
-            <div class="menu-tools">
-                <div class="tools">
-                    <a href="" class="login">log in</a>
-                    <a href="" class="signup">sign up</a>
-                </div>
-                <div class="tools talent">
-                    <a href="" class="talent-card"><i class="fa fa-address-card"></i>list your talent</a>
-                </div>
-            </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <div class="menu-tools">
+                            <div class="tools">
+                            <a href="" class="login">log in</a>
+                            <a href="" class="signup">sign up</a>
+                            </div>
+                            <div class="tools talent">
+                            <a href="" class="talent-card"><i class="fa fa-address-card"></i>list your talent</a>
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
         </nav>
+        <!--<nav class="menu navbar" role="navigation">-->
+            <!--<div class="container">-->
+            <!--<div class="logo"><img src="assets/img/me-logo.svg" alt="" class="logo-item"></div>-->
+            <!--<div class="navbar-header">-->
+                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbarSupportedContent">-->
+                    <!--<span class="sr-only">Toggle navigation</span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                <!--</button>-->
+            <!--</div>-->
+            <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+            <!--<ul class="menu-nav nav navbar-nav">-->
+                <!--<li class="menu-item dropdown">-->
+                    <!--<a href="#" class="nav-link dropdown-toggle" id="menu1" data-toggle="dropdown" data-hover="dropdown">About us</a>-->
+                    <!--<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">-->
+                        <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">What is MethodExpress</a></li>-->
+                        <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Business Problems We Solve</a></li>-->
+                        <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Our Approach- How it works</a></li>-->
+                        <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Domains of Knowledge</a></li>-->
+                        <!--<li class="dropdown">-->
+                            <!--<a class="test" tabindex="-1" href="#">Types of Offerings<span class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu">-->
+                                <!--<li class="">-->
+                                    <!--<a class="test" href="#">Professional Services</a>-->
+                                    <!--<a class="test" href="#">Staff Outsourcing</a>-->
+                                    <!--<a class="test" href="#">Training & Hands on Coaching</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Our Track Record</a></li>-->
+                        <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Our Value Proposition & Promise</a></li>-->
+                        <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Meet Some of the MethodExpress Talent</a></li>-->
+                        <!--<li role="presentation"><a role="menuitem" tabindex="-1" href="#">PDF Company Profile</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li class="menu-item"><a href="#" class="nav-link">How it works</a></li>-->
+                <!--<li class="menu-item"><a href="#" class="nav-link">Full menu</a></li><ul class="nav navbar-nav">-->
+                <!--<li class="dropdown dropdown-large">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">...</a>-->
+                    <!--<ul class="dropdown-menu dropdown-menu-large container row">-->
+                        <!--<li class="col-sm-3">-->
+                            <!--<ul>-->
+                                <!--<li class="dropdown-header">ABOUT METHODEXPRESS</li>-->
+                                <!--<li><a href="#">What is MethodExpress</a></li>-->
+                                <!--<li><a href="#">Business Problems We Solve</a></li>-->
+                                <!--<li><a href="#">Our Approach- How it works</a></li>-->
+                                <!--<li><a href="#">Domains of Knowledge</a></li>-->
+                                <!--<li><a href="#">Types of Offerings</a>-->
+                                    <!--<ul>-->
+                                        <!--<li><a href="#">Professional Services</a></li>-->
+                                        <!--<li><a href="#">Staff Outsourcing</a></li>-->
+                                        <!--<li><a href="#">Training & Hands on Coaching</a></li>-->
+                                    <!--</ul>-->
+                                <!--</li>-->
+                                <!--<li><a href="#">Our Track Record</a></li>-->
+                                <!--<li><a href="#">Our Value Proposition & Promise</a></li>-->
+                                <!--<li><a href="#">Meet Some of the MethodExpress Talent</a></li>-->
+                                <!--<li><a href="#">PDF Company Profile</a></li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li class="col-sm-3">-->
+                            <!--<ul>-->
+                                <!--<li class="dropdown-header">CLIENT</li>-->
+                                <!--<li><a href="#">Submit Request</a></li>-->
+                                <!--<li><a href="#">Our Edge, Your Advantage</a></li>-->
+                                <!--<li><a href="#">FAQs- Client</a></li>-->
+                                <!--<li><a href="#">Privacy Policy- Client</a></li>-->
+                                <!--<li><a href="#">SatisfactionGuaranteed Policy</a></li>-->
+                                <!--<li class="divider"></li>-->
+                                <!--<li class="dropdown-header">TALENT</li>-->
+                                <!--<li><a href="#">List Your Talent</a></li>-->
+                                <!--<li><a href="#">Talent info & FAQs</a></li>-->
+                                <!--<li><a href="#">Talent Booklet- PDF</a></li>-->
+                                <!--<li><a href="#">Privacy Policy -Talent</a></li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li class="col-sm-3">-->
+                            <!--<ul>-->
+                                <!--<li class="dropdown-header">TALENT</li>-->
+                                <!--<li><a href="#">Submit Training Request</a></li>-->
+                                <!--<li><a href="#">Training Programs</a></li>-->
+                                <!--<li><a href="#">About Learn Pool</a></li>-->
+                                <!--<li class="divider"></li>-->
+                                <!--<li class="dropdown-header">TALENT</li>-->
+                                <!--<li><a href="#">Become A Partner</a></li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="menu-tools">-->
+                <!--<div class="tools">-->
+                    <!--<a href="" class="login">log in</a>-->
+                    <!--<a href="" class="signup">sign up</a>-->
+                <!--</div>-->
+                <!--<div class="tools talent">-->
+                    <!--<a href="" class="talent-card"><i class="fa fa-address-card"></i>list your talent</a>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
     </div>
 </header>
 

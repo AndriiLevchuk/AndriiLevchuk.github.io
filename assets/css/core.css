@@ -158,11 +158,13 @@ a:focus {
 .logo {
   height: inherit;
   width: 168px;
-  line-height: 136px;
+  line-height: 100px;
+  display: inline;
 }
 
 .logo .logo-item {
   width: inherit;
+  vertical-align: middle;
 }
 
 .menu-nav {
@@ -180,7 +182,7 @@ a:focus {
 .header .nav-link:hover:before {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
   background: #e91150;
   width: 14px;
   height: 2px;
@@ -197,6 +199,30 @@ a:focus {
 
 .header .nav-link:hover {
   color: #e91150;
+}
+
+.navbar-collapse .nav.navbar-nav {
+  height: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-left {
+  margin-left: 100px;
+}
+
+.navbar-toggle {
+  margin-top: 35px;
+}
+
+.navbar-toggle .icon-bar {
+  background: #e91150;
 }
 
 .menu-tools {
@@ -1001,6 +1027,18 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   z-index: 100000000000;
 }
 
+.daterangepicker.dropdown-menu {
+  margin-top: 2px !important;
+}
+
+.calendar.left {
+  width: 100%;
+}
+
+.calendar.right {
+  width: 100%;
+}
+
 .white {
   background-color: #ffffff;
 }
@@ -1583,6 +1621,28 @@ span.filter-option.pull-left:before {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar-collapse .nav.navbar-nav {
+    background: white;
+    display: block;
+  }
+  .navbar-left {
+    margin: 0;
+  }
+  .navbar-collapse {
+    display: block;
+  }
+  .navbar-collapse .nav.navbar-nav {
+    display: block;
+    height: auto;
+    margin-top: -2px;
+    display: none;
+  }
+  .navbar-nav {
+    margin: 0;
+  }
+}
+
 /* Smartphones (landscape) ----------- */
 /* Smartphones (portrait) ----------- */
 /* iPads (portrait and landscape) ----------- */

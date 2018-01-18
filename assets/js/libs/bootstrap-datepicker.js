@@ -671,10 +671,10 @@
 			var height = this.component ? this.component.outerHeight(true) : this.element.outerHeight(false);
 			var width = this.component ? this.component.outerWidth(true) : this.element.outerWidth(false);
 			var left = offset.left - appendOffset.left;
-			var top = offset.top - appendOffset.top;
+			var top = offset.top - appendOffset.top + 2;
 
 			if (this.o.container !== 'body') {
-				top += scrollTop;
+				top += scrollTop + 2;
 			}
 
 			this.picker.removeClass(
@@ -720,9 +720,9 @@
 
 			this.picker.addClass('datepicker-orient-' + yorient);
 			if (yorient === 'top')
-				top -= calendarHeight + parseInt(this.picker.css('padding-top'));
+				top -= calendarHeight + parseInt(this.picker.css('padding-top')+2);
 			else
-				top += height;
+				top += height+2;
 
 			if (this.o.rtl) {
 				var right = windowWidth - (left + width);
