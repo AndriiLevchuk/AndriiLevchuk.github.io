@@ -59,7 +59,7 @@ a:focus
   position: relative
   padding-right: 38px
   height: inherit
-  line-height: 107px
+  line-height: 99px
 .header
   .nav-link:hover:before
     content: ""
@@ -98,6 +98,80 @@ a:focus
       width: 2px
       right: 6px
       background-color: $pink
+.dropdown-menu
+  margin: 0
+  li a
+    display: block
+    padding: 3px 20px
+    clear: both
+    font-weight: normal
+    line-height: 1.428571429
+    color: $pink
+    white-space: normal
+    &:hover, &:focus
+      text-decoration: none
+      color: $red
+      background-color: #f5f5f5
+.dropdown-large
+  position: static !important
+.dropdown-submenu
+  position: relative
+
+
+.dropdown-submenu .dropdown-menu
+  top: 0
+  left: 100%
+  margin-top: -1px
+
+.dropdown-menu-large
+  margin-left: auto
+  margin-right: auto
+  padding: 20px 0px
+  right: 0
+  > li
+    > ul
+      padding: 0
+      margin: 0
+      > li
+        list-style: none
+        > a
+          display: block
+          padding: 3px 20px
+          clear: both
+          font-weight: normal
+          line-height: 1.428571429
+          color: $pink
+          white-space: normal
+    ul > li > a
+      color: $pink
+      &:hover, &:focus
+        text-decoration: none
+        color: $red
+        background-color: #f5f5f5
+  .disabled > a
+    color: #999999
+    &:hover, &:focus
+      color: #999999
+    &:hover, &:focus
+      text-decoration: none
+      background-color: transparent
+      background-image: none
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled = false)
+      cursor: not-allowed
+  .dropdown-header
+    color: $red
+    font-size: 18px
+
+@media (max-width: 768px)
+  .dropdown-menu-large
+    margin-left: 0
+    margin-right: 0
+    > li
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+    .dropdown-header
+      padding: 3px 15px !important
 .talent
   align-items: flex-start!important
   padding-top: 6px

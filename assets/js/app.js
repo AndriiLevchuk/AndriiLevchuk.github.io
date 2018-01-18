@@ -32,15 +32,21 @@
     // });
 
 
-    $('ul.menu-nav li.dropdown').hover(function() {
-        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-    }, function() {
-        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-    });
-
-    $(".dropdown-menu.open [role=combobox]").append("<div></div>");
-
-
+    // $('ul.menu-nav li.dropdown').hover(function() {
+    //     $(this).find('ul li.dropdown:nth-child(2) ').stop(true, true).delay(200).fadeIn(500);
+    // }, function() {
+    //     $(this).find('ul li.dropdown:nth-child(2)').stop(true, true).delay(200).fadeOut(500);
+    // });
+    //
+    // //$(".dropdown-menu.open [role=combobox]").append("<div></div>");
+    //
+    // $(document).ready(function(){
+    //     $('.dropdown-submenu a.test').on("click", function(e){
+    //         $(this).next('ul').toggle();
+    //         e.stopPropagation();
+    //         e.preventDefault();
+    //     });
+    // });
     // $(function() {
     //
     //     var start = moment().subtract(29, 'days');
