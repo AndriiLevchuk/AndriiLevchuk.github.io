@@ -423,8 +423,10 @@ section
   margin-left: 32px
   p
     margin-top: 25px
-  .sub-p
-    font-size: 18px
+.sub-p
+  font-size: 14px
+  margin-left: 32px
+  line-height: 20px
 .icon-box
   margin-top: 80px
   .icon
@@ -947,6 +949,131 @@ span.filter-option.pull-left
   img
     width: 140px
 
+
+//login
+
+// carousel
+.owl-nav
+  .owl-prev
+    position: absolute
+    top: 0px
+    padding: 20px
+    background: #e1e5e8
+    text-align: center
+    i
+      color: white
+  .owl-next
+    position: absolute
+    top: 0px
+    right: 0px
+    padding: 20px
+    background-color: #e1e5e8
+    text-align: center
+    i
+      color: white
+  .disabled
+    display: none
+
+.f-center
+  justify-content: center
+
+.a-img
+  position: absolute
+  bottom: -79px
+  right: 0px
+  img
+    width: 250px
+.sub-title
+  ul li
+    list-style: disc
+    font-weight: 600
+  p
+    margin-bottom: 30px
+
+.p-relative
+  position: relative
+.title
+  padding: 60px
+  background-color: white
+  margin-left: 31px
+  margin-top: 30px
+  margin-bottom: 20px
+.title-h1
+  position: relative
+  padding: 60px
+  margin-top: 30px
+  font-size: 2em
+
+.arrow
+  z-index: 10
+  width: 150px
+  position: absolute
+  top: 32%
+.right
+  right: -120px
+.left
+  left: -100px
+.logined-tools
+  .link
+    display: flex
+    align-items: center
+    text-transform: capitalize
+    color: #8c8487
+    font-family: "DIN Pro", sans-serif
+    i
+      margin-right: 10px
+      font-size: 1.7em
+    &:hover
+      background: none
+      color: $red
+  .circle-progress
+    margin-right: 10px
+.chevron
+  font-size: 12px
+  margin-left: 5px
+  align-self: center
+.progress-circle
+  transform: rotate(-90deg)
+
+.progress__value
+  stroke-dasharray: 339.292
+  stroke-dashoffset: 339.292
+  animation: progress 2s infinite alternate
+
+@keyframes progress
+  from
+    stroke-dashoffset: 339.292
+  to
+    stroke-dashoffset: 0
+.circle-progress
+  position: relative
+.circle-progress:before
+  content: "90%"
+  position: absolute
+  font-size: 12px
+  top: 22%
+  left: 22%
+  right: 0
+  bottom: 0
+  margin-left: auto
+  margin-right: auto
+  width: 100%
+  color: white
+
+.circle-progress:after
+  content: ""
+  position: absolute
+  width: 31px
+  height: 31px
+  top: 3px
+  left: 0
+  right: 0
+  bottom: 0
+  background: #8c8487
+  border-radius: 50%
+  margin-left: auto
+  margin-right: auto
+  z-index: -1
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover
   color: black
   text-decoration: none

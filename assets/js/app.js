@@ -1,4 +1,5 @@
-    var start = moment().subtract(29, 'days');
+
+var start = moment().subtract(29, 'days');
     var end = moment();
     $('#config-demo').daterangepicker({
         "linkedCalendars": false,
@@ -65,3 +66,31 @@
     //     cb(start, end);
     //
     // });
+    $(document).ready(function() {
+// invoke the carousel
+        $('#myCarousel').carousel({
+            interval: 6000
+        });
+        $('.owl-carousel').owlCarousel({
+            loop:false,
+            margin:10,
+            merge:true,
+            navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:1,
+                    nav:false
+                },
+                1000:{
+                    items:2,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+    });
