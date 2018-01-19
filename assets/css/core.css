@@ -1728,6 +1728,11 @@ span.filter-option.pull-left:before {
   color: #e91150;
 }
 
+.logined-tools .link:focus {
+  background: none;
+  color: #e91150;
+}
+
 .logined-tools .circle-progress {
   margin-right: 10px;
 }
