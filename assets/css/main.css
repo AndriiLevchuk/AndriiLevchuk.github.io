@@ -1317,6 +1317,9 @@ input {
   .arrow {
     padding-top: 60px;
   }
+  .text-left {
+    text-align: center !important;
+  }
   span.next {
     z-index: 45;
     position: absolute;
