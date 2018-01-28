@@ -1,1059 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Volonteam</title>
+    <!-- Latest compiled and minified CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/js/libs/jquery-migrate-1.4.1.min.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-select.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-dropdownhover.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
-
 <body>
 
-    <header id="header" class="header fixed-header">
-    <div class="container-fluid h">
-        <nav class="navbar " role="navigation">
+
+
+<main>
+    <section class="hero panel-bg_1" data-section-name="hero" >
+        <span class="hero-title">
+            <!--<span class="char1">В</span>-->
+            <!--<span class="char1 dash">-&#45;&#45;</span>-->
+            <!--<span class="char2">О</span>-->
+            <!--<span class="char1 dash">-&#45;&#45;</span>-->
+            <!--<span class="char3">Л</span>-->
+            <!--<span class="char1 dash">-&#45;&#45;</span>-->
+            <!--<span class="char4">О</span>-->
+            <!--<span class="char1 dash">-&#45;&#45;</span>-->
+            <!--<span class="char5">Н</span>-->
+            <!--<span class="char1 dash">-&#45;&#45;</span>-->
+            <!--<span class="char6">Т</span>-->
+            <!--<span class="char1 dash">-&#45;&#45;</span>-->
+            <!--<span class="char7 dash">И</span>-->
+            <!--<span class="char1 dash">-&#45;&#45;</span>-->
+            <!--<span class="char8">М</span>-->
+            <img src="assets/icons/hero-title.svg" alt="Volonteam" style="width=100%;">
+        </span>
+    <span class="hero-title-mobile">
+        <img src="assets/icons/hero-title-mobile.svg" alt="Volonteam" style="width=100%;">
+    </span>
+    <div class="arrow">
+    <span class="next"></span>
+</div>
+    <div class="overlay"></div>
+</section>
+    <section class="menu">
+        <header class="header">
     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <div class="logo"><img src="assets/img/me-logo.svg" alt="" class="logo-item"></div>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-animations" aria-expanded="false" aria-controls="bs-example-navbar-collapse-animations">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded d-flex align-content-center ">
+            <div class="account" data-toggle="modal" data-target="#log-in"><img src="assets/icons/vtman.svg" alt=""></div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-animations" data-hover="dropdown" data-animations="fadeInDown fadeInRight fadeInUp fadeInLeft" aria-expanded="false">
-
-            <ul class=" nav navbar-nav navbar-left">
-                
-
-                
-                <li class="dropdown  active ">
-                    <a href="/" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-expanded="false">about us</span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        
-                        <li class=""><a href="#">What we do</a></li>
-                        
-                    </ul>
-                </li>
-                
-                
-
-                
-                
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="">
-                    <div class="menu-tools">
-                        <div class="tools">
-                            <a href="/login.html" class="login">log in</a>
-                            <a href="" class="signup">sign up</a>
-
-                        </div>
-                        <div class="tools talent">
-                            <a href="" class="talent-card"><i class="fa fa-address-card"></i>list your talent</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-
+            <a class="navbar-brand" href="#"><img class="logo" src="assets/icons/vt-logo.svg" alt="Волонтим"></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Для НКО<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Специалистам</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Блог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О Нас</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#sign-up">Зарегистрироваться</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#log-in">Войти</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 </header>
-
-            <main>
-        <div class="hero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6"><div class="hero-title"><span>Redefining advisory and outsourcing...</span></div></div>
-                    <div class="col-md-6">
-                        <div class="btn-group">
-                            <button class="btn btn-red btn-small">Client? Get Started</button>
-                            <button class="btn btn-red btn-small">Talent? Get Started</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="hero-text-block">
-                            <div class="text-item text-left">
-                                <span class="text-small">Tell us about your</span>
-                            </div>
-                            <div class="text-item text-left">
-                                <span class="text-big">business needs</span>
-                                <span class="text-small">& let us</span>
-                            </div>
-                            <div class="text-item text-left">
-                                <span class="text-small">offer the</span>
-                                <span class="text-big">right people</span>
-                            </div>
-                            <div class="text-item text-right">
-                                <span class="text-small">at the</span>
-                                <span class="text-big">right time</span>
-                            </div>
-                            <div class="text-item text-right">
-                                <span class="text-small">& the </span>
-                                <span class="text-big">right cost,</span>
-                            </div>
-                            <div class="text-item text-right">
-                                <span class="text-small">managed under the</span>
-                                <span class="text-big">right setup.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="hero-img">
-                            <img src="assets/img/guys.svg" alt="">
-                            <div class="overlay"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="form-block">
-            <div class="container">
-                <form action="" class="search-form">
-                    <div class="search-form-fields">
-                    <select class="selectpicker" data-title="I AM Looking for">
-                        <option>Staff Outsourcing</option>
-                        <option>Professional Service</option>
-                        <option>Training and Hand-on Coaching</option>
-                    </select>
-                    <select class="selectpicker" data-title="In This Domain">
-                        <option>Strategy</option>
-                        <option>Business</option>
-                        <option>Project Management</option>
-                        <option>Business Intelligence</option>
-                        <option>Information Technology</option>
-                        <option>Quality</option>
-                        <option>Enterprise Resource Planning</option>
-                        <option>Human Resouces</option>
-                    </select>
-                    <select class="selectpicker" data-title="In This country " data-live-search="true" data-liveSearchPlaceholder="Country" data-liveSearchNormalize="true">
-                        <option>Israel</option>
-                        <option>USA</option>
-                        <option>Canada</option>
-                        <option>Ukraine</option>
-                    </select>
-                    <select class="selectpicker" data-title="In This city" data-live-search="true" data-liveSearchPlaceholder="City" data-liveSearchNormalize="true">
-                        <option>Toronto</option>
-                        <option>Kiev</option>
-                        <option>Jerusalem</option>
-                    </select>
-
-                        <div class="btn-group demo btn-group bootstrap-select">
-                            <button type="button" role="button"  id="config-demo" class="btn dropdown-toggle bs-placeholder btn-default">
-                                In This time frame
-                            </button>
-                        </div>
-                        <div class="btn-group">
-                    </div>
-                    </div>
-                    <div class="submit">
-                        <button  type="submit" class="btn btn-yellow btn-submit btn-big">Submit  your request</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <section class="grey">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">Domains of Knowledge We Cover</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sub-title">
-                            <p><strong>We Cover “CEO-agenda” domains of Knowledge</strong> where it can be very hard, costly, and time consuming to find talent and manage
-        engagements.</p>
-                            <p class="sub-p">Domains that are most critical to the success of the whole organization and usually<strong> rank high on the priority list</strong>of the organization’s leadership.
-        </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="icon-box text-center">
-                        <div class="col-md-3 col-sm-3 col-xs-6">
-                            <div class="icon">
-                                <img src="assets/img/me-strategy.svg" alt="" class="svg">
-                            </div>
-                            <div class="icon-text">strategy</div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="icon">
-                                <img src="assets/img/me-business.svg" alt="" class="svg">
-                            </div>
-                            <div class="icon-text">business</div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="icon">
-                                <img src="assets/img/me-project-management.svg" alt="" class="svg">
-                            </div>
-                            <div class="icon-text">project management</div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="icon">
-                                <img src="assets/img/me-bi.svg" alt="" class="svg">
-                            </div>
-                            <div class="icon-text">bi</div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="icon">
-                                <img src="assets/img/me-it.svg" alt="" class="svg">
-                            </div>
-                            <div class="icon-text">it</div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="icon">
-                                <img src="assets/img/me-quality.svg" alt="" class="svg">
-                            </div>
-                            <div class="icon-text">quality</div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="icon">
-                                <img src="assets/img/me-erp.svg" alt="" class="svg">
-                            </div>
-                            <div class="icon-text">erp</div>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="icon">
-                                <img src="assets/img/me-hr.svg" alt="" class="svg">
-                            </div>
-                            <div class="icon-text">hr</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">Our offerings types</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <div class="service-box-1 text-center">
-                            <a href="" class="service-box-1-link">
-                            <img src="assets/img/me-professional-services_1.svg" alt="" class="service-box-1-image">
-                            <div class="service-box-text">Professional Services</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center ">
-                        <div class="service-box-1 text-center">
-                            <a href="" class="service-box-1-link">
-                                <img src="assets/img/me-staff-outsourcing.svg" alt="" class="service-box-1-image">
-                                <div class="service-box-text">Staff Outsourcing</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="service-box-1 text-center">
-                            <a href="" class="service-box-1-link">
-                                <img src="assets/img/me-Training-Hands-on-coaching%20.svg" alt="" class="service-box-1-image">
-                                <div class="service-box-text ">Training & Hands on  Coaching </div>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="button-block text-center">
-                            <button class="btn btn-big btn-stone">
-                                more details
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="grey">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">Our Approach: How it works</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sub-title">
-                            <p>We will get you the Right Talent, for the Right Cost, at the Right Location & Time, and will Mange them  Right Setup & Terms.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="cicle">
-                        <div class="col-md-4">
-                            <div class="icon-box icon-box-content-left text-right content-end">
-                                <div class="icon-box-content-wraper">
-                                    <div class="arrow"><img src="assets/img/start-arrow.svg" alt=""></div>
-                                    <div class="icon-box-title">1</div>
-                                    <div class="icon-box-content text-right">Together, we pick talent. Can be one person or a team.</div>
-                                </div>
-                                <div class="icon-box-image">
-                                    <img src="assets/img/cicle1.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                            <div class="icon-box icon-box-content-left text-right content-end">
-                                <div class="icon-box-content-wraper">
-                                    <div class="arrow"><img src="assets/img/arrow.svg" alt=""></div>
-                                    <div class="icon-box-title">2</div>
-                                    <div class="icon-box-content text-right">We suggest the
-                                        best contractual setup.
-                                    </div>
-                                </div>
-                                <div class="icon-box-image">
-                                    <img src="assets/img/cicle2.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                            <div class="icon-box icon-box-content-left  content-end">
-                                <div class="icon-box-content-wraper">
-                                    <div class="arrow"><img src="assets/img/arrow.svg" alt=""></div>
-                                    <div class="icon-box-title">3</div>
-                                    <div class="icon-box-content text-right">We take care
-                                        of quality.</div>
-                                    <div class="arrow-right"><img src="assets/img/corner-arrow_1.svg" alt=""></div>
-                                </div>
-                                <div class="icon-box-image">
-                                    <img src="assets/img/cicle3.svg" alt="">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="cicle">
-                        <div class="col-md-4 ">
-                            <div class="icon-box icon-box-content-left  content-end d-column middle">
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title text-center">8<br><br>You get results. no hassle.</div>
-                                    <div class="icon-box-content text-center">Satisfaction Guaranteed.</div>
-                                </div>
-                                <div class="icon-box-image small-image">
-                                    <img src="assets/img/cicle8.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                            <div class="icon-box icon-box-content-left  content-end middle center">
-                                <div class="icon-box-image ">
-                                    <img src="assets/img/cicleexpert.svg" alt="">
-                                    <div class="small-arrow left"><img src="assets/img/left.svg" alt=""></div>
-                                    <div class="small-arrow right"><img src="assets/img/right.svg" alt=""></div>
-                                    <img src="assets/img/cicleclient.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                            <div class="icon-box icon-box-content-left  content-end d-column middle">
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title text-center">4<br><br>We manage talent
-                                        and the project</div>
-                                </div>
-                                <div class="icon-box-image biger-image">
-                                    <img src="assets/img/cicle4.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="cicle">
-                        <div class="col-md-4">
-                            <div class="icon-box icon-box-content-left text-right bottom">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/cicle7.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="arrow arrow-reverse-90"><img src="assets/img/corner-arrow_1.svg" alt=""></div>
-                                    <div class="icon-box-title">7</div>
-                                    <div class="icon-box-content text-left">We take care of payments.</div>
-                                    <div class="arrow-right arrow-reverse-180"><img src="assets/img/arrow.svg" alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="icon-box icon-box-content-left  text-right  bottom">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/cicle6.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">6</div>
-                                    <div class="icon-box-content text-left">We take care of milestones.</div>
-                                    <div class="arrow-right arrow-reverse-180"><img src="assets/img/arrow.svg" alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="icon-box icon-box-content-left text-right bottom">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/cicle5.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="arrow-right "><img src="assets/img/arrow-left.svg" alt=""></div>
-                                    <div class="icon-box-title">5</div>
-                                    <div class="icon-box-content text-left">We take care of logistics and coordination.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="button-block text-center">
-                            <button class="btn btn-big btn-stone">
-                                more details
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 ">
-                        <div class="section-title">Multiple Options, practical approach, &</br>
-                            guarantee of your satisfaction.
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="icon-box icon-box-content-left">
-                            <div class="icon-box-image">
-                                <img src="assets/img/me-professional-services.svg" alt="">
-                            </div>
-                            <div class="icon-box-content-wraper">
-                                <div class="icon-box-title">Professional Services? </div>
-                                <div class="icon-box-content">Hire, utsource, get a trainer or a coach.</div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="icon-box icon-box-content-left">
-                            <div class="icon-box-image">
-                                <img src="assets/img/me-Personal-attention.svg" alt="">
-                            </div>
-                            <div class="icon-box-content-wraper">
-                                <div class="icon-box-title">Personal Attention?</div>
-                                <div class="icon-box-content">Personal interaction to clearly understand your requirements.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="icon-box icon-box-content-left">
-                            <div class="icon-box-image">
-                                <img src="assets/img/me-Clarity.svg" alt="">
-                            </div>
-                            <div class="icon-box-content-wraper">
-                                <div class="icon-box-title">Clarity?</div>
-                                <div class="icon-box-content">
-                                    <ul>
-                                        <li>Clear Deliverables.</li>
-                                        <li>Clear Quality Standards.</li>
-                                        <li>Clear Milestones.</li>
-                                        <li>Clear Payment Terms.</li>
-                                        <li>Clear Cancellation Policy.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="icon-box icon-box-content-left">
-                            <div class="icon-box-image">
-                                <img src="assets/img/me-Options.svg" alt="">
-                            </div>
-                            <div class="icon-box-content-wraper">
-                                <div class="icon-box-title">Options?</div>
-                                <div class="icon-box-content">Multiple profiles of
-                                    talent, solutions, setups
-                                    and scenarios. </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="icon-box icon-box-content-left">
-                            <div class="icon-box-image">
-                                <img src="assets/img/me-professional-services.svg" alt="">
-                            </div>
-                            <div class="icon-box-content-wraper">
-                                <div class="icon-box-title">Proven Methodology?</div>
-                                <div class="icon-box-content">Hire, utsource, get a trainer or a coach.</div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="icon-box icon-box-content-left">
-                            <div class="icon-box-image">
-                                <img src="assets/img/me-Satisfaction-guaranteed.svg" alt="">
-                            </div>
-                            <div class="icon-box-content-wraper">
-                                <div class="icon-box-title">Satisfaction Guaranteed?</div>
-                                <div class="icon-box-content">Or money back,
-                                    according to a clear
-                                    policy, detailed upfront.
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="select-box">
-                        <div class="col-md-3">
-                            <div class="icon-box icon-box-content-left select">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-check-box.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Get the right service delivereD</div>
-                                    <div class="icon-box-content">without the cost and hassle of dealing with traditional consulting or advisory firms.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="icon-box icon-box-content-left select">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-check-box.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Get the right person</div>
-                                    <div class="icon-box-content">without the cost and the logistics of formally entering into an employment contract or the issues of dealing directly with freelancers.
-                                    </div>
-                                </div>
-                                <div class="separator"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="icon-box icon-box-content-left select">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-check-box.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Get the right
-                                        trainer or coach</div>
-                                    <div class="icon-box-content">without the cost and hassle of dealing with a traditional training company.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="icon-box icon-box-content-left select">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-check-box.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Get the right
-                                        cohesive teaM</div>
-                                    <div class="icon-box-content">to deliver your entire
-                                        project, managed under the right contract and setup.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="button-block text-center">
-                            <button class="btn btn-big btn-yellow">
-                                more details
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="grey">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">Our Edge, Your Advantage</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 no-gutter">
-                        <div class="icon-box-wide">
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-Thousands%20%20of%20Profiles%20%20%20.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Our</div>
-                                    <div class="icon-box-content">Thousands<br>
-                                        of Profiles
-                                    </div>
-                                </div>
-                                <div class="fa fa-chevron-right chevron"></div>
-                            </div>
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-Time-saved.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Your</div>
-                                    <div class="icon-box-content">Time<br>
-                                        Saved
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 no-gutter">
-                        <div class="icon-box-wide">
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-Credibility%20.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Our</div>
-                                    <div class="icon-box-content">Credibility
-
-                                    </div>
-                                </div>
-                                <div class="fa fa-chevron-right chevron"></div>
-                            </div>
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-Time-saved_1.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Your</div>
-                                    <div class="icon-box-content">Time<br>
-                                        Saved
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 no-gutter">
-                        <div class="icon-box-wide blue">
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-Cohesive-teams.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Our</div>
-                                    <div class="icon-box-content">Cohesive<br>
-                                        Teams
-                                    </div>
-                                </div>
-                                <div class="fa fa-chevron-right chevron"></div>
-                            </div>
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-Great-projects.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Your</div>
-                                    <div class="icon-box-content">Great<br>
-                                        Projects
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 no-gutter">
-                        <div class="icon-box-wide blue">
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-Guarantee%20%20.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Our</div>
-                                    <div class="icon-box-content">Guarantee
-
-                                    </div>
-                                </div>
-                                <div class="fa fa-chevron-right chevron"></div>
-                            </div>
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-minimized-risk.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Your</div>
-                                    <div class="icon-box-content">Minimized<br>
-                                        Risk
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 no-gutter">
-                        <div class="icon-box-wide">
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-Cohesive-teams.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Our</div>
-                                    <div class="icon-box-content">Cohesive<br>
-                                        Teams
-                                    </div>
-                                </div>
-                                <div class="fa fa-chevron-right chevron"></div>
-                            </div>
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-efficient-investment.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Your</div>
-                                    <div class="icon-box-content">Efficient<br>
-                                        Investment
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 no-gutter">
-                        <div class="icon-box-wide">
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-Personal-attention.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Our</div>
-                                    <div class="icon-box-content">Personal<br>
-                                        Attention
-                                    </div>
-                                </div>
-                                <div class="fa fa-chevron-right chevron"></div>
-                            </div>
-                            <div class="icon-box-wide-item">
-                                <div class="icon-box-image">
-                                    <img src="assets/img/me-custimised-solution.svg" alt="">
-                                </div>
-                                <div class="icon-box-content-wraper">
-                                    <div class="icon-box-title">Your</div>
-                                    <div class="icon-box-content">Custimised<br>
-                                        Solution
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="button-block text-center">
-                            <button class="btn btn-big btn-stone">
-                                more details
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">Our Track Record</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sub-title">
-                            <p>METHOD has been delivering <strong>quality and success since the year 2000</strong>. <strong>With MethodExpress</strong> new approach, we are <strong>now more practical</strong>, cost effective, and <strong>impeccable</strong> than ever.
-                                .</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="card-box">
-                        <div class="col-md-2">
-                            <div class="card">
-                                <div class="card-header">
-                                    Professional
-                                    Services
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-image">
-                                        <img src="assets/img/me-professional-services_1.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="number">2,000+</div>
-                                    <div class="text">Corporate Clients</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card">
-                                <div class="card-header">
-                                    Staff
-                                    Outsourcing
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-image">
-                                        <img src="assets/img/me-staff-outsourcing.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="number">100’s</div>
-                                    <div class="text">of Staff
-                                        Outsourced</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card">
-                                <div class="card-header">
-                                    Training
-                                    and Coaching
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-image">
-                                        <img src="assets/img/me-Training-Hands-on-coaching%20.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="number">20,000 +</div>
-                                    <div class="text"><br>Graduates</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card">
-                                <div class="card-header">
-                                    PMO<br>
-                                    Setups
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-image">
-                                        <img src="assets/img/me-PMO-setups%20.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="number">30 +</div>
-                                    <div class="text">PMO<br>Setups</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card">
-                                <div class="card-header">
-                                    Project
-                                    Contributions
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-image">
-                                        <img src="assets/img/me-project-contributions%20%20.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="number">USD 35 B</div>
-                                    <div class="text">Project
-                                        Contribution</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card">
-                                <div class="card-header">
-                                    Years
-                                    in Business
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-image">
-                                        <img src="assets/img/me-years-in-business%20%20.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="number">18 +</div>
-                                    <div class="text"><br>Years</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="button-block text-center">
-                            <button class="btn btn-big btn-stone">
-                                more details
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section class="grey">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">LearnPool: Let us create your public course!</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sub-title">
-                            <p class="list">Are you are looking to join a certain training course in your area as an individual, but do not seem to find it offered anywhere with the right quality, timing, and cost?</p>
-                            <p class="list">Do you need to hold a private training course for your team but do not have a sufficient number of trainees to make it cost-effective?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="pool-box">
-                        <div class="col-md-6">
-                            <img src="assets/img/me-car.svg" alt="">
-                        </div>
-                        <div class="col-md-6 text-right">
-                            <div class="text">MethodExpress LearnPool might be just for you!</div>
-                            <img src="assets/img/me-card.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="button-block text-center">
-                            <button class="btn btn-big btn-stone">
-                                more details
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-
-    <footer class="footer">
-    <div class="container">
-        <div class="main-footer">
+        <section class="panel panel_1 panel-bg_1" data-section-name="about"  >
+    <div class="content">
+        <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-menu"><span class="footer-menu-title">About METHODEXPRESS</span>
-                        <ul class="menu">
-                            <li class="menu-item"><a href="#" class="nav-link">What is MethodExpress</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link"> Business Problems We Solve</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">Our Approach- How it works</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">Domains of Knowledge</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">Types of Offerings</a>
-                                <ul class="menu-child">
-                                    <li class="child-item"><a href="#" class="nav-link">Professional Services</a></li>
-                                    <li class="child-item"><a href="#" class="nav-link">Staff Outsourcing</a></li>
-                                    <li class="child-item"><a href="#" class="nav-link">Training & Hands on Coaching</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item"><a href="#" class="nav-link">Our Track Record</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">Our Value Proposition & Promise</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">Meet Some of the MethodExpress Talent</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">PDF Company Profile</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="footer-menu"><span class="footer-menu-title">CLIENT</span>
-                        <ul class="menu">
-                            <li class="menu-item"><a href="#" class="nav-link">Submit Request</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">Our Edge, Your Advantage</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">FAQs- Client</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">Privacy Policy- Client</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">SatisfactionGuaranteed Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="footer-menu"><span class="footer-menu-title">TALENT</span>
-                        <ul class="menu">
-                            <li class="menu-item"><a href="#" class="nav-link">List Your Talent</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">Talent info & FAQs</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">Talent Booklet- PDF</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">Privacy Policy -Talent</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="footer-logo"><img src="assets/img/footer-logo.svg" alt="MethodExpress"></div>
+                <div class="col-md-12">
+                    <div class="title display-1">Квалифицированная помощь НКО<br> без лишней волокиты</div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-menu"><span class="footer-menu-title">TALENT</span>
-                        <ul class="menu">
-                            <li class="menu-item"><a href="#" class="nav-link">Submit Training Request</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">Training Programs</a></li>
-                            <li class="menu-item"><a href="#" class="nav-link">About Learn Pool</a></li>
-                        </ul>
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-6">
+                        <div class="sub-title display-2">Волонтим — это сообщество профессионалов, готовых помочь вашей организации в любой непонятной ситуации</div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="footer-menu"><span class="footer-menu-title">TALENT</span>
-                        <ul class="menu">
-                            <li class="menu-item"><a href="#" class="nav-link">Become A Partner </a></li>
-                        </ul>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center content-extend">
+                    <div class="col-md-6">
+                        <form action="submit" class="email-form">
+    <input type="email" class="email" placeholder="Petrow@gmail.ru">
+    <button class="btn btn-primary btn-rounded btn-mr-left">Запросить доступ</button>
+</form>
                     </div>
-                </div>
-                <div class="footer-img">
-                    <img src="assets/img/guys.svg" alt="">
-                    <div class="overlay"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="sub-footer">
+    <div class="overlay"></div>
+</section>
+        <section class="panel panel_2 panel-bg_2 cd-section" data-section-name="about1"  >
+    <div class="content">
         <div class="container">
             <div class="row">
-                <div class="col-md-3"></div>
                 <div class="col-md-12">
-                    <div class="copy-right text-right">
-                        <p class="">Method Express 2018, All Rights Reserved.</p>
-                        <p class="">This website is made possible by generous support of the USAID</p>
+                    <div class="title display-1">Чем больше помогаешь другим людям,  тем сложнее всё делать правильно
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-8">
+                        <div class="sub-title display-2">С первого дня  некоммерческие организации разрываются между выполнением своей миссии и решением административных, финансовых и технических проблем.  И по мере развития организации рутины  и рисков становится только больше</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+        <section id="section3" class="panel panel_3 dark" data-section-name="about2" >
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title display-1">На поле выходит<br> Волонтим</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-8 offset-md-1">
+                        <div class="sub-title display-2">Мы сделали платформу специально для НКО, активистов и социальных предприниматлей, чтобы они могли получать персонализированную помощь от лучших специалистов в стране</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center content-extend">
+                    <div class="col-md-8 offset-md-1">
+                        <div class="pills-block">
+                            <span class="pills"># персональные данные</span>
+                            <span class="pills"># налоговое право</span>
+                            <span class="pills"># трудовое право</span>
+                            <span class="pills"># законодательство об НКО</span>
+                            <span class="pills"># разрешение споров</span>
+                            <span class="pills"># гражданское право</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="panel panel_4 panel-bg_blue " data-section-name="about3" >
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title display-1">Два режима взаимодействия</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center content-extend card-block flex-wrap">
+                    <div class="col-md-4">
+                        <div class="card d-flex align-items-center">
+                            <img class="card-img" src="assets/icons/vt-chat-2.svg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Консультации</h5>
+                                <p class="card-text">Нужен совет по развитию НКО?</p>
+                                <p class="card-text"> Мы быстро найдем эксперта, который сможет  вас проконсультировать  в режиме онлайн</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card d-flex align-items-center">
+                            <img class="card-img" src="assets/icons/vt-gears.svg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Проекты</h5>
+                                <p class="card-text">Есть задача, требующая вовлечения эксперта на продолжительное время?</p>
+                                <p class="card-text">Мы найдем квалифицированного исполнителя и поможем довести дело до конца</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="panel panel_5 dark long" data-section-name="about4" >
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-wrap">
+                    <div class="title display-1">Получайте ответы  именно на свои  вопросы</div>
+                    <div class="sub-title display-2">Мы верим, что не бывает двух одинаковых НКО. С помощью Волонтим вы можете получать действительно релевантную и быструю помощь  в рамках консультаций с нужными  с пециалистами 1-на-1.</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="chat">
+                        <div class="persone d-flex ">
+                            <div class="chat-image"><img src="assets/img/face.png" alt=""></div>
+                            <div class="massage in">
+                                <div class="name">Дмитрий Капаев</div>
+                                <div class="chat-bubble">
+                                    <p>Обладают ли НКО правом не платить госпошлину при подаче исковых заявлений в суд? Может льготы есть?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat">
+                        <div class="persone d-flex  flex-row-reverse">
+                            <div class="chat-image"><img src="assets/img/face-2.png" alt=""></div>
+                            <div class="massage  out">
+                                <div class="name text-right">Дмитрий Капаев</div>
+                                <div class="chat-bubble">
+                                    <p>Как таковых льгот по оплате судебных пошлин для НКО Налоговый кодекс  не предусматривает, за исключением освобождения от нее общественных организаций инвалидов, выступающих  в качестве истцов и ответчиков…
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex order4 flex-wrap">
+                    <div class="title display-1">Ставьте задачи  как профессионал</div>
+                    <div class="sub-title display-2">
+                        Когда со всех сторон вас окружают проблемы, бывает трудно четко поставить задачу. Мы сделали шаблоны брифов для каждого типа консультаций, чтобы вы не откладывали эту непонятную историю на потом.  Брифы помогают нам безошибочно подбирать специалистов и экономят время для всех участников.
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end order3 flex-wrap">
+                    <div class="chat-bot">
+                        <div class="question-exampel">
+                            <div class="question-title">
+                                Какой у вас вопрос?
+                            </div>
+                            <div class="question-sub-title">Как учредить благотворительный фонд</div>
+                        </div>
+                        <div class="question bubble">
+                            Какая сфера деятельности?
+                        </div>
+                        <div class="question bubble">
+                            Сколько учредителей?
+                        </div>
+                        <div class="question bubble">
+                            Из какого вы региона?
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex order5 flex-column">
+                    <div class="title display-1">Не сомневайтесь  в ответах</div>
+                    <div class="sub-title display-2">
+                        Мы тщательно отбираем кандидатов, отдавая предпочтение тем, у кого уже есть опыт работы в третьем секторе.                         </div>
+                </div>
+                <div class="col-md-6 d-flex order6 flex-column">
+                    <img class="" src="assets/img/Group%2026%20Copy.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="panel panel_6 panel-bg_blue " data-section-name="about5" >
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title display-4">Чувствуете что есть проблема,  но не знаете кому из экспертов обратиться?</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sub-title display-2">Оставьте свой телефон и мы поможем вам выявить проблемы
+                        и сформулировать запрос</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center col-md-12">
+                    <form action="submit" class="email-form number">
+    <input type="text" class="form-control bfh-phone phone" data-format="+7 (ddd) ddd-dd-dd">
+    <button class="btn btn-primary btn-rounded ">Получить бесплатную помощь</button>
+</form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+        <section class="panel panel_7 dark" data-section-name="about6" >
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title display-1">Как это работает</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center content-extend flex-wrap ">
+                    <div class="col-md">
+                        <div class="icon-box">
+                            <img src="assets/icons/acount.svg" alt="">
+                            <div class="icon-text">
+                                Регистрируетесь
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="icon-box">
+                            <img src="assets/icons/vtmassage.svg" alt="">
+                            <div class="icon-text">
+                                Устанавливаете  бота
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="icon-box">
+                            <img src="assets/icons/vtnote.svg" alt="">
+                            <div class="icon-text">
+                                Описываете  свою проблему
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="icon-box">
+                            <img src="assets/icons/vtchat.svg" alt="">
+                            <div class="icon-text">
+                                Общаетесь  со специалистом  в чате
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="icon-box">
+                            <img src="assets/icons/vtstars.svg" alt="">
+                            <div class="icon-text">
+                                Оставляете  фидбек
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="panel panel_8 panel-bg_blue" data-section-name="about7" >
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title display-1">Не нашли то, что искали?<br>  Оставьте свою почту, чтобы узнать  о запуске новых областей знаний:
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center col-md-12">
+                    <div class="col-md-6 col-xs-1">
+                        <form action="submit" class="email-form  subscribe-form" >
+    <input type="email" class="email" placeholder="Petrow@gmail.ru">
+    <button class="btn btn-primary btn-rounded btn-mr-left btn-subscribe">Подписатся</button>
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="panel panel_9 cd-section dark"  data-section-name="about8">
+    <div class="content">
+        <div class="container">
+            <div class="carousel owl-carousel">
+                <div class="testimonials d-flex align-items-center flex-md-column flex-wrap">
+                    <div class="t-header">
+                        <div class="avatar">
+                            <img src="assets/img/face-3.png" alt="">
+                        </div>
+                        <div class="name">
+                            Сергей Долгов
+                        </div>
+                        <div class="position"><p>Директор по коммуникациям <br>Национальной Юридической Службы<p></div>
+                    </div>
+                    <div class="body offset-md-1">
+                        Подобные платформы не только экономят колоссальные временные, финансовые и человеческие ресурсы, но и помогают найти наилучший способ решения сложных вопросов, которые теперь становятся гораздо проще
+                    </div>
+                </div>
+                <div class="testimonials d-flex align-items-center flex-md-column flex-wrap">
+                    <div class="t-header">
+                        <div class="avatar">
+                            <img src="assets/img/face-3.png" alt="">
+                        </div>
+                        <div class="name">
+                            Сергей Долгов
+                        </div>
+                        <div class="position">Директор по коммуникациям<br> Национальной Юридической Службы</div>
+                    </div>
+                    <div class="body offset-md-1">
+                        Подобные платформы не только экономят колоссальные временные, финансовые и человеческие ресурсы, но и помогают найти наилучший способ решения сложных вопросов, которые теперь становятся гораздо проще
+                    </div>
+                </div>
+                <div class="testimonials d-flex align-items-center flex-md-column flex-wrap">
+                    <div class="t-header">
+                        <div class="avatar">
+                            <img src="assets/img/face-3.png" alt="">
+                        </div>
+                        <div class="name">
+                            Сергей Долгов
+                        </div>
+                        <div class="position">Директор по коммуникациям<br> Национальной Юридической Службы</div>
+                    </div>
+                    <div class="body offset-md-1">
+                        Подобные платформы не только экономят колоссальные временные, финансовые и человеческие ресурсы, но и помогают найти наилучший способ решения сложных вопросов, которые теперь становятся гораздо проще
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrow">
+    <span class="next"></span>
+</div>
+</section>
+
+        <section class="panel panel_10 panel-bg_3 cd-section " data-section-name="about9">
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="title display-1">Помогать другим проще,<br>  когда кто-то помогает вам</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" d-flex justify-content-center content-extend">
+                    <div class="col-md-7">
+                        <div class="sub-title display-2">
+                            Поделитесь своей проблемой с теми,  кто решал её уже много-много раз
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-primary btn-rounded btn-big">Поделиться проблемой</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="socials">
+                        <a href="#" class="social-btn">
+                            <i >Fb</i>
+                        </a>
+                        <a href="#" class="social-btn">
+                            <i>VK</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="mail">
+                        <a href="email:help@volon.team">help@volon.team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+        <footer class=" footer d-flex" data-section-name="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="socials">
+                    <a href="#" class="social-btn">
+                        <i >Fb</i>
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i>VK</i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <a href="#">
+                    Пользовательское соглашение
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="copy">VOLOTEAM 2018</div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="mail">
+                    <a href="email:help@volon.team">help@volon.team</a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+    </section>
+</main>
 
-<script src="assets/js/libs/jquery-3.2.1.min.js"></script>
-<script src="assets/js/libs/bootstrap.min.js"></script>
-<script src="assets/js/libs/bootstrap-select.min.js"></script>
-<script src="assets/js/libs/moment.min.js"></script>
-<script src="assets/js/daterangepicker.js"></script>
-<script src="assets/js/libs/bootstrap-dropdownhover.js"></script>
-<script src="assets/js/libs/owl.carousel.js"></script>
+<div class="modal fade" id="log-in" tabindex="-1" role="dialog" aria-labelledby="log-in" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <spna class="modal-title text-center">Войти</spna>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control email" id="login-name" placeholder="email@example.ru">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control email" id="login-email" placeholder="пароль">
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-rounded ">Войти</button>
+                <a href="" class="register-nav-link" data-toggle="modal" data-target="#sign-up">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="sign-up" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <spna class="modal-title">Регистрация</spna>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input class="form-control name" id="signup-name" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control email" id="signup-name" placeholder="email@example.ru">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control email" id="signup-spec" placeholder="Специализация">
+                    </div>
+                    <input class="magic-checkbox" type="checkbox" name="layout" id="1" value="option1">
+                    <label class="pull-left" for="1">Принимаю соглашение о персональных данных</label>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-rounded ">Зарегистрироваться</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="assets/js/vendor/bootstrap.min.js" ></script>
+<script src="assets/js/vendor/jquery.scrollify.js"></script>
+<script src="assets/js/vendor/jquery.lettering-0.6.1.min.js"></script>
+<script src="assets/js/vendor/owl.carousel.min.js"></script>
+<script src="assets/js/vendor/bootstrap-formhelpers.min.js"></script>
 <script src="assets/js/app.js"></script>
-
-
-
-
 </body>
 </html>
+<scripts src="https://code.jquery.com/jquery-2.2.4.min.js"></scripts>
