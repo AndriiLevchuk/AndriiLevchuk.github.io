@@ -396,6 +396,16 @@ a, button, .navbar-toggle:focus {
   padding-left: 0;
 }
 
+.navbar-toggleable-md .navbar-nav .nav-link {
+  padding-right: 1.344rem;
+  padding-left: 1.344rem;
+}
+
+.navbar-toggleable-md .navbar-nav.right .nav-link {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
 .navbar-light {
   background-color: #ffffff;
 }
