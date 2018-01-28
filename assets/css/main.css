@@ -598,7 +598,6 @@ a, button, .navbar-toggle:focus {
 .btn-subscribe {
   padding: 20px 30px;
   max-width: 170px;
-  margin-top: 1.2rem;
 }
 
 input {
@@ -646,11 +645,6 @@ input {
 
 .btn-mr-left {
   margin-left: -60px;
-  margin-top: 1.2rem;
-}
-
-.btn-phone {
-  margin-top: 1.2rem;
 }
 
 .footer .mail {
@@ -1207,9 +1201,16 @@ input {
   }
   .btn-mr-left {
     margin-left: 0;
+    margin-top: 1.2rem;
   }
   .btn-primary {
     padding: 20px;
+  }
+  .btn-subscribe {
+    margin-top: 1.2rem;
+  }
+  .btn-phone {
+    margin-top: 1.2rem;
   }
   .owl-dots {
     margin-left: 45px;
@@ -1262,7 +1263,7 @@ input {
   .socials a.social-btn {
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    padding: 20px;
+    padding: 14px;
     background: #F58C7C;
     color: white;
     margin-right: 10px;
