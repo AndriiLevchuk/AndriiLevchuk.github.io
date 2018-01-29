@@ -10,11 +10,12 @@ html
   background-repeat: no-repeat
   background-size: cover
   font-family: "Prompt Medium", sans-serif
+  font-size: 16px
 
 body
   display: flex
   flex-direction: column
-  font-size: 18px
+  font-size: 100%
   //opacity: 0.5
   font-family: "Prompt Medium", sans-serif
 main
@@ -29,7 +30,7 @@ main
 a:focus
   outline: 0px auto -webkit-focus-ring-color
   outline-offset: 0px
-
+//header
 .header
   height: 100px
   box-shadow: 0px 10px 7px rgba(0,0,0,0.1)
@@ -48,7 +49,7 @@ a:focus
     color: $red
 .logo
   height: inherit
-  width: 168px
+  width: 150px
   line-height: 100px
   display: inline
   .logo-item
@@ -175,16 +176,6 @@ a:focus
     color: $red
     font-size: 18px
 
-@media (max-width: 768px)
-  .dropdown-menu-large
-    margin-left: 0
-    margin-right: 0
-    > li
-      margin-bottom: 30px
-      &:last-child
-        margin-bottom: 0
-    .dropdown-header
-      padding: 3px 15px !important
 .talent
   align-items: flex-start!important
   padding-top: 6px
@@ -197,6 +188,43 @@ a:focus
 .login, .signup, .talent-card
   color: $pink
 
+// mobile nav
+  .navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover
+  background-color: transparent
+.account
+  width: 22px
+  margin-top: 3px
+  position: absolute
+  right: 60px
+  display: none
+
+.navbar-default .navbar-toggle
+  border: none
+
+.navbar-toggle span.icon-bar
+  transition: all 0.15s
+
+.navbar-toggle span:nth-child(2)
+  transform: rotate(45deg)
+  transform-origin: 3px 10%
+
+.navbar-toggle span:nth-child(3)
+  opacity: 0
+
+.navbar-toggle span:nth-child(4)
+  transform: rotate(-45deg)
+  transform-origin: 1px 90%
+
+.navbar-toggle.collapsed span:nth-child(2),
+.navbar-toggle.collapsed span:nth-child(4)
+  transform: rotate(0)
+
+.navbar-toggle.collapsed span:nth-child(3)
+  opacity: 1
+
+
+//hero section
 .hero
   padding-top: 60px
   .hero-title
@@ -215,31 +243,7 @@ a:focus
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%, white 100%)
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 )
 
-.btn
-  margin-top: 10px
-  border: none
-  border-radius: 0
-  text-transform: uppercase
-  box-shadow: 5px 9px 7px rgba(0,0,0,0.1)
-.btn-small
-  font-size: 1em
-  padding: 20px 29px
-.btn-red
-  color: $main-white
-  background-color: $red
-.btn-red
-  &:hover
-    color: $main-white
-  &:focus
-    color: $main-white
-.btn
-  outline: none
-  &:focus
-    outline: none
-.btn-group
-  margin-right: -35px
-  .btn
-    margin-right: 30px
+
 
 .hero-text-block
   display: block
@@ -286,29 +290,70 @@ a:focus
       align-items: center
     .btn-group.bootstrap-select.open:before
       position: absolute
-      top: 49px
+      top: 48px
+      left: 14px
+      content: ''
+      width: 0
+      height: 0
+      border-left: 16px solid transparent
+      border-right: 16px solid transparent
+      border-bottom: 16px solid white
+      z-index: 1000000
+    .btn-group.bootstrap-select.open:after
+      position: absolute
+      top: 46px
+      left: 13px
+      content: ''
+      width: 0
+      height: 0
+      border-left: 17px solid transparent
+      border-right: 17px solid transparent
+      border-bottom: 17px solid #999a9e
+      z-index: 100000
+    .btn-group.bootstrap-select.open.dropup:before
+      position: absolute
+      top: -1px
       left: 15px
       content: ''
       width: 0
       height: 0
       border-left: 14px solid transparent
       border-right: 14px solid transparent
-      border-bottom: 14px solid white
-      z-index: 100000000000
-    .btn-group.bootstrap-select.open:after
+      border-top: 14px solid white
+      border-bottom: none
+      z-index: 1000000
+    .btn-group.bootstrap-select.open.dropup:after
       position: absolute
-      top: 47px
+      top: -1px
       left: 13px
       content: ''
       width: 0
       height: 0
       border-left: 16px solid transparent
       border-right: 16px solid transparent
-      border-bottom: 16px solid #999a9e
+      border-top: 16px solid #999a9e
+      border-bottom: none
       z-index: 100000
+    .btn-group.bootstrap-select.open.dropup
+      &:hover:after
+        border-top-color: $red
+      &:focus:after
+        border-top-color: $red
+      &:active:after
+        border-top-color: $red
+    .btn-group.bootstrap-select.open
+      &:hover:after
+        border-bottom-color: $red
+      &:focus:after
+        border-bottom-color: $red
+      &:active:after
+        border-bottom-color: $red
+
     .dropdown-menu
       border: 0
       border-radius: 0
+      margin: 0px
+      padding: 0
     span.filter-option
       outline: none
       font-size: 16px
@@ -331,14 +376,14 @@ a:focus
     .form-control
       display: block
       width: 100%
-      height: 34px
+      height: 50px
       padding: 6px 12px
       font-size: 14px
       line-height: 1.42857143
       color: #555
       background-color: #fff
       background-image: none
-      border: 2px solid $red
+      border: 1px solid $red
       border-radius: 4px
       -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
       box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
@@ -378,7 +423,7 @@ a:focus
       color: #262626
       text-decoration: none
       background-color: $main-white
-      border: 2px solid $red
+      border: 1px solid $red
     .bootstrap-select.btn-group .dropdown-menu li
       position: relative
       outline: none
@@ -401,7 +446,10 @@ a:focus
   font-size: 18px
 .grey
   background-color: $light-grey
-
+.section_5, .section_3
+  display: block
+.m-vis
+  display: none
 section
   padding-top: 94px
   padding-bottom: 75px
@@ -418,13 +466,13 @@ section
     width: 4px
     height: 39px
     background: $red
-    left: 5px
+    left: 15px
 .sub-title
   margin-left: 32px
   p
     margin-top: 25px
 .sub-p
-  font-size: 14px
+  font-size: 16px
   margin-left: 32px
   line-height: 20px
 .icon-box
@@ -450,6 +498,8 @@ section
   display: block
 .footer-menu
   font-family: "Open Sans", sans-serif
+  position: relative
+  z-index: 10
   .footer-menu-title
     display: block
     font-size: 20px
@@ -477,11 +527,13 @@ section
           color: #9aa8b8
           content: "•"
           padding-right: 10px
-
+.logo-footer
+  width: 150px
 .footer-img
   position: absolute
   bottom: 0px
   right: 0px
+  z-index: 0
   img
     width: 500px
     opacity: 0.5
@@ -624,6 +676,7 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
 
 //service box 1
 .service-box-1
+
   margin-top: 60px
 .service-box-1-image
   width: 100%
@@ -632,21 +685,28 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   flex-direction: column
   min-height: 300px
   justify-content: space-around
-  border: 2px solid transparent
+  border: 1px solid transparent
   font-size: 0.89em
   color: $red
   text-transform: uppercase
   transition: 1s
   padding: 30px 0
+  align-items: center
+  min-height: 392px
   &:hover
     color: $red
     text-decoration: none
-    border: 2px solid $red
+    border: 1px solid $red
     transition: 1s
   .service-box-1-image,
   .service-box-text
     padding: 30px 70px 30px 70px
+  .service-box-1-image
+    width: 320px
+
 .service-box-text
+  font-size: 20px
+  margin-top: 20px
 .button-block
   display: block
   margin-top: 30px
@@ -737,13 +797,17 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   background-color: #d8d8d8
 
 .card-box
+  display: block
   margin-top: 60px
+  .owl-nav
+    display: none
 .card
   box-shadow: 0px 0px 1px #000
   border: 2px solid transparent
   transition: 1s
   opacity: 1
   text-align: center
+  margin-top: 1px
   &:hover
     border: 2px solid $red
     transition: 1s
@@ -816,13 +880,6 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   background: $main-white
   transition: 0.4s top cubic-bezier(.3, .73, .3, .74)
 
-@media screen and (min-width: 320px) and (max-width: 920px)
-  .search-form-fields
-    flex-direction: column
-    width: 100%
-    align-items: center
-  .btn-group
-    margin-right: 0px
 
 span.filter-option.pull-left
   position: relative
@@ -866,6 +923,14 @@ span.filter-option.pull-left
   top: 0
   right: 0
   padding-right: 10px
+.arrow-v-center-right
+  right: -15px!important
+  padding-right: 10px
+  left: 126px!important
+  top: 55px
+.arrow-v-center-left
+  right: -15px!important
+  top: 55px
 .arrow-left
   position: absolute
   width: 90px
@@ -901,9 +966,10 @@ span.filter-option.pull-left
     left: -219px
     padding-right: 10px
   .arrow-right
-    right: 0
+    left: 7px
     bottom: -31px
     top: auto
+    width: 140px
 .table-condensed
   .start-date
     background: $red
@@ -951,6 +1017,76 @@ span.filter-option.pull-left
 
 
 //login
+.login
+  .select-box
+    margin-top: 0
+    background: white
+    .icon-box
+      background: $red
+      min-height: 200px
+      margin-top: 20px
+      border: 1px solid transparent
+      &:hover
+        background: white
+        border: 1px solid $red
+        .icon-box-title
+          color: $red
+        .icon-box-content
+          color: black
+    .icon-box-content-wraper
+      .icon-box-title
+        color: $main-white
+        font-weight: 600
+        font-size: 20px
+        text-transform: capitalize
+        line-height: 30px
+      .icon-box-content
+        color: $main-white
+  .img-big
+    width: 200px
+  .img-middle img
+    width: 155px
+  .img-small
+    width: 100px
+  .item-carousel-header
+    margin-bottom: 50px
+    .sub-title
+      color: #363636
+      margin-left: 0
+    .title
+      margin-top: 0
+      display: block
+      width: 100%
+      margin-left: 0
+      padding: 0
+      font-size: 25px
+      font-weight: 600
+      color: black
+  .item-carousel-footer
+    .menu-list
+      list-style: disc
+      color: #363636
+      line-height: 30px
+      padding-left: 20px
+      a
+        font-size: 16px
+        color: #363636
+  .list-group
+    .item-carousel-header
+      margin-bottom: 20px
+    .sub-title-list
+      font-weight: 600
+      color: #363636
+  .icon-box-content
+    margin-left: 10px
+    color: #363636
+  .icon-box-content-wraper
+    .icon-box-title
+      color: black
+      font-weight: 600
+      font-size: 32px
+      text-transform: capitalize
+      line-height: 30px
 
 // carousel
 .owl-nav
@@ -1008,7 +1144,6 @@ span.filter-option.pull-left
   z-index: 10
   width: 150px
   position: absolute
-  top: 32%
 .right
   right: -120px
 .left
@@ -1083,4 +1218,30 @@ span.filter-option.pull-left
   text-decoration: none
   background-color: white
   outline: 0
+//component
+.btn
+  margin-top: 10px
+  border: none
+  border-radius: 0
+  text-transform: uppercase
+  box-shadow: 5px 9px 7px rgba(0,0,0,0.1)
+.btn-small
+  font-size: 1em
+  padding: 20px 29px
+.btn-red
+  color: $main-white
+  background-color: $red
+.btn-red
+  &:hover
+    color: $main-white
+  &:focus
+    color: $main-white
+.btn
+  outline: none
+  &:focus
+    outline: none
+.btn-group
+  margin-right: -35px
+  .btn
+    margin-right: 30px
 @import "media"
