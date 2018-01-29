@@ -1351,6 +1351,7 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   opacity: 1;
   text-align: center;
   margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 .card:hover {
@@ -2108,6 +2109,8 @@ span.filter-option.pull-left:before {
   }
   .icon-box {
     padding-left: 0;
+    margin-top: 50px;
+    margin-bottom: 65px;
   }
   .service-box-1-link .service-box-1-image, .service-box-1-link .service-box-text {
     padding: 0;
@@ -2125,12 +2128,15 @@ span.filter-option.pull-left:before {
   .service-box-1 {
     margin-top: 20px;
   }
+  .service-box-1-link {
+    min-height: 300px;
+  }
   .service-box-1-link .service-box-1-image {
     width: 270px;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 767px) and (max-width: 768px) {
   .dropdown-menu-large {
     margin-left: 0;
     margin-right: 0;
@@ -2144,11 +2150,121 @@ span.filter-option.pull-left:before {
   .dropdown-menu-large .dropdown-header {
     padding: 3px 15px !important;
   }
+  .icon-box-image img {
+    width: 70px;
+  }
+  .arrow, .bottom .arrow-right {
+    width: 78px;
+  }
+  .bottom .arrow-right {
+    bottom: 74px;
+  }
+  .corner {
+    display: none;
+  }
+  .icon-box {
+    padding-left: 0px;
+  }
+  .icon-box-wide {
+    margin: 0;
+  }
+  .section_6 [class*="col-sm-"] {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+  .section_6 .card-image img {
+    width: 100px;
+    height: 85px;
+  }
+  .main-footer .navbar-toggle {
+    display: block !important;
+  }
+  .logo {
+    line-height: 70px;
+  }
+  .search-form-fields {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .search-form .search-form-fields .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    margin: 0;
+  }
+  .search-form .search-form-fields {
+    border: none;
+  }
+  .search-form .search-form-fields .bootstrap-select > .dropdown-toggle.bs-placeholder,
+  .search-form .search-form-fields .dropdown-toggle {
+    border-top: 1px solid;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .main-footer {
+    padding: 20px 0px 20px 0px;
+  }
+  .main-footer .navbar-header {
+    float: none !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-footer .navbar-header .navbar-toggle {
+    float: right;
+    position: absolute;
+    right: 15px;
+    margin: 0;
+    margin-left: auto;
+  }
+  .main-footer .navbar-header .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+  span.filter-option.pull-left:before {
+    left: 0;
+  }
+  .main-footer {
+    padding: 20px 0px 20px 0px;
+  }
+  .main-footer .navbar-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-footer .navbar-header .navbar-toggle {
+    margin: 0;
+    margin-left: auto;
+  }
+  .main-footer .navbar-header .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+  .service-box-text {
+    font-size: 120%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
 }
 
-@media screen and (min-width: 320px) and (max-width: 920px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     height: 70px;
+    display: none;
   }
   .logo {
     line-height: 70px;
@@ -2171,6 +2287,15 @@ span.filter-option.pull-left:before {
   }
   .section-title {
     font-size: 32px;
+  }
+  .menu-tools {
+    margin-left: 20px;
+  }
+  .talent .talent-card i {
+    font-size: 17px !important;
+    margin-right: 10px !important;
+    vertical-align: text-bottom;
+    margin-left: 0px !important;
   }
   .hero .btn-group {
     display: -webkit-box;
@@ -2258,6 +2383,9 @@ span.filter-option.pull-left:before {
   .main-footer .navbar-header .navbar-toggle .icon-bar {
     background-color: white;
   }
+  .btn-full-width {
+    width: 100%;
+  }
   .section_5 {
     text-align: center;
   }
@@ -2337,6 +2465,13 @@ span.filter-option.pull-left:before {
   .section_5 .icon-box-wide-item .icon-box-image {
     width: 120px;
   }
+  .section_7 .list {
+    padding-left: 20px;
+  }
+  .section_7 .list:before {
+    left: 0px;
+    top: 2px;
+  }
   .pool-box {
     display: block;
   }
@@ -2403,15 +2538,72 @@ span.filter-option.pull-left:before {
 
 /* Smartphones (landscape) ----------- */
 /* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  .card-box [class*="col-xs-"] {
+    padding: 0;
+  }
+}
+
 /* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .header {
+    display: none;
+  }
+  .hero-img {
+    display: none;
+  }
+  .menu-tools .login {
+    margin-left: 11px !important;
+  }
+  .service-box-text {
+    font-size: 120%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
 /* iPads (landscape) ----------- */
 /* iPads (portrait) ----------- */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
+  .flypanels-topbar {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+  .logo .logo-item {
+    width: 150px;
+    line-height: 100px;
+  }
+  .navbar-header {
+    line-height: 100px;
+  }
+  .menu-tools {
+    border: none;
+  }
   .main-footer .collapse {
     display: block;
   }
   .main-footer .logo-footer {
     display: none;
+  }
+  .logo {
+    line-height: 70px;
+    width: 120px;
+  }
+  .logo .talent-card i {
+    font-size: 20px !important;
+  }
+  .logo .login {
+    margin-left: 11px !important;
+  }
+  .offcanvas.flypanels-left {
+    -webkit-box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .bootstrap-select.btn-group .dropdown-toggle .filter-option [class*="col-md-"],
+  .section_1 [class*="col-md-"] {
+    padding: 0;
   }
 }
 

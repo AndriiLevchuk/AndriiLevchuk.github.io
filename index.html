@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap-select.css">
     <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/flyPanels.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/bootstrap-dropdownhover.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
@@ -19,7 +20,67 @@
 
 <body>
 
-    <header id="header" class="header fixed-header">
+
+    <div class="flypanels-container preload">
+        <div class="offcanvas flypanels-left">
+            <div class="panelcontent" aria-hidden="true" data-panel="treemenu">
+                <nav class="flypanels-treemenu" role="navigation" aria-label="Main navigation">
+                    <ul class="nav navbar-nav navbar-right ">
+                    <li class="">
+                        <div class="menu-tools">
+                            <div class="tools">
+                                <a href="/login.html" class="login">log in</a>
+                                <a href="" class="signup">sign up</a>
+                            </div>
+                            <div class="tools talent">
+                                <a href="" class="talent-card"><i class="fa fa-address-card"></i>list your talent</a>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                    <ul role="tree">
+                        <li class="haschildren" role="treeitem" aria-expanded="false"><div><a href="#" class="link">ABAUT</a><a aria-label="Expand submenu" href="#" data-aria-label="Expand submenu" data-aria-label-active="Collapse submenu" class="expand">2<i class="fa icon" aria-hidden="true"></i></a></div>
+                            <ul role="group" aria-hidden="true" hidden>
+                                <li><div><a href="#" class="link">What is MethodExpress</a></div></li>
+                                <li><div><a href="#" class="link">Business Problems We Solve</a></div></li>
+                                <li><div><a href="#" class="link">Our Approach- How it works</a></div></li>
+                                <li><div><a href="#" class="link">Domains of Knowledge</a></div></li>
+                                <li class="haschildren" aria-expanded="false"><div class="link"><a href="#" class="link">Types of Offerings</a><a aria-label="Expand submenu" href="#" data-aria-label="Expand submenu" data-aria-label-active="Collapse submenu" class="expand">3<i class="fa icon" aria-hidden="true"></i></a> </div>
+                                    <ul role="group" aria-hidden="true" hidden>
+                                        <li class="active"><div><a href="#" class="link">Professional Services</a></div></li>
+                                        <li><div><a href="#" class="link">Staff Outsourcing</a></div></li>
+                                        <li><div><a href="#" class="link">Training & Hands on Coaching</a></div></li>
+                                    </ul>
+                                </li>
+                                <li><div><a href="#" class="link">Our Track Record</a></div></li>
+                                <li><div><a href="#" class="link">Our Value Proposition & Promise</a></div></li>
+                                <li><div><a href="#" class="link">Meet Some of the MethodExpress Talent</a></div></li>
+                                <li><div><a href="#" class="link">PDF Company Profile</a></div></li>
+                            </ul>
+                        </li>
+                        <li class="haschildren" aria-expanded="false"><div class="link"><a href="#" class="link">How it works</a></div></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="flypanels-main">
+            <div class="flypanels-topbar container">
+                <div class="logo"><img src="assets/img/me-logo.svg" alt="" class="logo-item"></div>
+                <a class="flypanels-button-left icon-menu icon-hamburger" aria-label="Show navigation" data-aria-label="Show navigation" data-aria-label-active="Close navigation" aria-haspopup="true" data-panel="treemenu" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <a class="flypanels-button-right icon-menu icon-magnify" aria-label="Close search" data-aria-label="Show search" data-aria-label-active="Close search" data-panel="search" href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+            <div class="flypanels-content">
+                <main>
+                    <header id="header" class="header fixed-header">
     <div class="container h">
         <nav class="navbar " role="navigation">
     <div class="container">
@@ -73,9 +134,7 @@
 
     </div>
 </header>
-
-    <main>
-        <div class="hero">
+                    <div class="hero">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -106,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <div class="btn-group">
                     <button class="btn btn-red btn-small">Client? Get Started</button>
                     <button class="btn btn-red btn-small">Talent? Get Started</button>
@@ -159,12 +218,12 @@
                 </div>
             </div>
             <div class="submit">
-                <button  type="submit" class="btn btn-yellow btn-submit btn-big">Submit  your request</button>
+                <button  type="submit" class="btn btn-yellow btn-submit btn-big ">Submit  your request</button>
             </div>
         </form>
     </div>
 </div>
-        <section class="grey">
+                    <section class="grey ">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -183,7 +242,7 @@
         </div>
 
         <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="col-md-3 col-xs-6">
                     <div class="icon-box text-center">
                         <div class="icon">
                             <img src="assets/img/me-strategy.svg" alt="" class="svg">
@@ -199,7 +258,6 @@
                         <div class="icon-text">business</div>
                     </div>
                 </div>
-                <div class="clearfix visible-xs"></div>
                 <div class="col-md-3 col-xs-6">
                     <div class="icon-box text-center">
                         <div class="icon">
@@ -216,7 +274,8 @@
                         <div class="icon-text">bi</div>
                     </div>
                 </div>
-                <div class="clearfix visible-xs"></div>
+        </div>
+        <div class="row">
                 <div class="col-md-3 col-xs-6">
                     <div class="icon-box text-center">
                         <div class="icon">
@@ -233,7 +292,6 @@
                         <div class="icon-text">quality</div>
                     </div>
                 </div>
-                <div class="clearfix visible-xs"></div>
                 <div class="col-md-3 col-xs-6">
                     <div class="icon-box text-center">
                         <div class="icon">
@@ -254,7 +312,7 @@
         </div>
     </div>
 </section>
-        <section class="white">
+                    <section class="white">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -262,7 +320,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 col-sm-4 text-center">
                 <div class="service-box-1 text-center">
                     <a href="" class="service-box-1-link">
                         <img src="assets/img/me-professional-services_1.svg" alt="" class="service-box-1-image">
@@ -270,7 +328,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 text-center ">
+            <div class="col-md-4 col-sm-4 text-center ">
                 <div class="service-box-1 text-center">
                     <a href="" class="service-box-1-link">
                         <img src="assets/img/me-staff-outsourcing.svg" alt="" class="service-box-1-image">
@@ -278,7 +336,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 col-sm-4 text-center">
                 <div class="service-box-1 text-center">
                     <a href="" class="service-box-1-link">
                         <img src="assets/img/me-Training-Hands-on-coaching%20.svg" alt="" class="service-box-1-image">
@@ -291,7 +349,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="button-block text-center">
-                    <button class="btn btn-big btn-stone">
+                    <button class="btn btn-big btn-stone btn-full-width">
                         more details
                     </button>
                 </div>
@@ -299,7 +357,7 @@
         </div>
     </div>
 </section>
-        <section class="grey">
+                    <section class="grey section_1">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -428,7 +486,7 @@
             </div>
         <div class="row d-vis">
             <div class="cicle">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="icon-box icon-box-content-left text-right content-end">
                         <div class="icon-box-content-wraper">
                             <div class="arrow"><img src="assets/img/start-arrow.svg" alt=""></div>
@@ -440,7 +498,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 ">
+                <div class="col-md-4 col-sm-4">
                     <div class="icon-box icon-box-content-left text-right content-end">
                         <div class="icon-box-content-wraper">
                             <div class="arrow"><img src="assets/img/arrow.svg" alt=""></div>
@@ -454,14 +512,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 ">
+                <div class="col-md-4 col-sm-4">
                     <div class="icon-box icon-box-content-left  content-end">
                         <div class="icon-box-content-wraper">
-                            <div class="arrow"><img src="assets/img/arrow.svg" alt=""></div>
+                            <div class="arrow "><img src="assets/img/arrow.svg" alt=""></div>
                             <div class="icon-box-title">3</div>
-                            <div class="icon-box-content text-right">We take care
+                            <div class="icon-box-content text-right ">We take care
                                 of quality.</div>
-                            <div class="arrow-right"><img src="assets/img/corner-arrow_1.svg" alt=""></div>
+                            <div class="arrow-right corner"><img src="assets/img/corner-arrow_1.svg" alt=""></div>
                         </div>
                         <div class="icon-box-image">
                             <img src="assets/img/cicle3.svg" alt="">
@@ -473,7 +531,7 @@
         </div>
         <div class="row d-vis">
             <div class="cicle">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="icon-box icon-box-content-left  content-end d-column middle">
                         <div class="icon-box-content-wraper">
                             <div class="icon-box-title text-center">8<br><br>You get results. no hassle.</div>
@@ -484,7 +542,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="icon-box icon-box-content-left  content-end middle center">
                         <div class="icon-box-image ">
                             <img src="assets/img/cicleexpert.svg" alt="">
@@ -494,7 +552,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="icon-box icon-box-content-left  content-end d-column middle">
                         <div class="icon-box-content-wraper">
                             <div class="icon-box-title text-center">4<br><br>We manage talent
@@ -509,20 +567,20 @@
         </div>
         <div class="row d-vis">
             <div class="cicle">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="icon-box icon-box-content-left text-right bottom">
                         <div class="icon-box-image">
                             <img src="assets/img/cicle7.svg" alt="">
                         </div>
                         <div class="icon-box-content-wraper">
-                            <div class="arrow arrow-reverse-90"><img src="assets/img/corner-arrow_1.svg" alt=""></div>
+                            <div class="arrow arrow-reverse-90 corner"><img src="assets/img/corner-arrow_1.svg" alt=""></div>
                             <div class="icon-box-title">7</div>
                             <div class="icon-box-content text-left">We take care of payments.</div>
-                            <div class="arrow-right arrow-reverse-180"><img src="assets/img/arrow.svg" alt=""></div>
+                            <div class="arrow-right arrow-reverse-180 "><img src="assets/img/arrow.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="icon-box icon-box-content-left  text-right  bottom">
                         <div class="icon-box-image">
                             <img src="assets/img/cicle6.svg" alt="">
@@ -534,13 +592,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <div class="icon-box icon-box-content-left text-right bottom">
                         <div class="icon-box-image">
                             <img src="assets/img/cicle5.svg" alt="">
                         </div>
                         <div class="icon-box-content-wraper">
-                            <div class="arrow-right "><img src="assets/img/arrow-left.svg" alt=""></div>
+                            <div class="arrow-right corner"><img src="assets/img/arrow-left.svg" alt=""></div>
                             <div class="icon-box-title">5</div>
                             <div class="icon-box-content text-left">We take care of logistics and coordination.</div>
                         </div>
@@ -559,7 +617,7 @@
         </div>
     </div>
 </section>
-        <section class="white">
+                    <section class="white ">
     <div class="container">
         <div class="row">
             <div class="col-md-12 ">
@@ -569,7 +627,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="icon-box icon-box-content-left">
                     <div class="icon-box-image">
                         <img src="assets/img/me-professional-services.svg" alt="">
@@ -581,7 +639,7 @@
 
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="icon-box icon-box-content-left">
                     <div class="icon-box-image">
                         <img src="assets/img/me-Personal-attention.svg" alt="">
@@ -592,7 +650,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="icon-box icon-box-content-left">
                     <div class="icon-box-image">
                         <img src="assets/img/me-Clarity.svg" alt="">
@@ -611,7 +669,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="icon-box icon-box-content-left">
                     <div class="icon-box-image">
                         <img src="assets/img/me-Options.svg" alt="">
@@ -625,7 +683,7 @@
 
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="icon-box icon-box-content-left">
                     <div class="icon-box-image">
                         <img src="assets/img/me-professional-services.svg" alt="">
@@ -637,7 +695,7 @@
 
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="icon-box icon-box-content-left">
                     <div class="icon-box-image">
                         <img src="assets/img/me-Satisfaction-guaranteed.svg" alt="">
@@ -655,7 +713,7 @@
         </div>
         <div class="">
             <div class="select-box">
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="icon-box icon-box-content-left select">
                         <div class="icon-box-image">
                             <img src="assets/img/me-check-box.svg" alt="">
@@ -667,7 +725,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="icon-box icon-box-content-left select">
                         <div class="icon-box-image">
                             <img src="assets/img/me-check-box.svg" alt="">
@@ -680,7 +738,7 @@
                         <div class="separator"></div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="icon-box icon-box-content-left select">
                         <div class="icon-box-image">
                             <img src="assets/img/me-check-box.svg" alt="">
@@ -693,7 +751,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="icon-box icon-box-content-left select">
                         <div class="icon-box-image">
                             <img src="assets/img/me-check-box.svg" alt="">
@@ -712,7 +770,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="button-block text-center">
-                    <button class="btn btn-big btn-yellow">
+                    <button class="btn btn-big btn-yellow btn-full-width">
                         more details
                     </button>
                 </div>
@@ -720,7 +778,7 @@
         </div>
     </div>
 </section>
-        <section class="grey">
+                    <section class="grey">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -729,7 +787,7 @@
         </div>
         <div class="row ">
             <div class="section_5 owl-carousel">
-                <div class="col-md-6 no-gutter">
+                <div class="col-md-6 col-sm-6 no-gutter">
                     <div class="row icon-box-wide">
                         <div class="col-xs-12 icon-box-wide-item">
                                     <div class="icon-box-image">
@@ -757,7 +815,7 @@
                     </div>
 
                 </div>
-                <div class="col-md-6 no-gutter">
+                <div class="col-md-6 col-sm-6 no-gutter">
                     <div class="row icon-box-wide">
                         <div class="col-xs-12 icon-box-wide-item">
                             <div class="icon-box-image">
@@ -782,7 +840,7 @@
                             </div>
                     </div>
                 </div>
-                <div class="col-md-6 no-gutter">
+                <div class="col-md-6 col-sm-6 no-gutter">
                         <div class="row icon-box-wide blue">
                             <div class="col-xs-12 icon-box-wide-item">
                                 <div class="icon-box-image">
@@ -810,7 +868,7 @@
                         </div>
 
                 </div>
-                <div class="col-md-6 no-gutter">
+                <div class="col-md-6 col-sm-6 no-gutter">
 
                         <div class="row icon-box-wide blue">
                             <div class="col-xs-12 icon-box-wide-item">
@@ -838,7 +896,7 @@
                             </div>
                         </div>
                 </div>
-                <div class="col-md-6 no-gutter">
+                <div class="col-md-6 col-sm-6 no-gutter">
                         <div class="row icon-box-wide">
                             <div class="col-xs-12 icon-box-wide-item">
                                 <div class="icon-box-image">
@@ -865,7 +923,7 @@
                             </div>
                         </div>
                 </div>
-                <div class="col-md-6 no-gutter">
+                <div class="col-md-6 col-sm-6 no-gutter">
                         <div class="row icon-box-wide">
                             <div class="col-xs-12 icon-box-wide-item">
                                 <div class="icon-box-image">
@@ -905,7 +963,7 @@
         </div>
     </div>
 </section>
-        <section class="white">
+                    <section class="white section_6">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -922,7 +980,7 @@
         </div>
         <div class="row">
             <div class="card-box owl-carousel">
-                <div class="col-md-2 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                     <div class="card">
                         <div class="card-header">
                             Professional
@@ -939,7 +997,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                     <div class="card">
                         <div class="card-header">
                             Staff
@@ -957,7 +1015,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                     <div class="card">
                         <div class="card-header">
                             Training
@@ -974,7 +1032,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                     <div class="card">
                         <div class="card-header">
                             PMO<br>
@@ -991,7 +1049,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                     <div class="card">
                         <div class="card-header">
                             Project
@@ -1009,7 +1067,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                     <div class="card">
                         <div class="card-header">
                             Years<br>
@@ -1040,7 +1098,7 @@
 
     </div>
 </section>
-        <section class="grey">
+                    <section class="grey section_7">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -1078,7 +1136,39 @@
         </div>
     </div>
 </section>
-    </main>
+                </main>
+            </div>
+        </div>
+        <div class="offcanvas flypanels-right" style="height: 480px;">
+            <div class="panelcontent" aria-hidden="true" data-panel="search">
+                <div class="searchbox" data-searchurl="json/searchresult.json?search=true">
+                    <input title="search" type="text" id="flypanels-searchfield">
+                    <a href="#" aria-label="search" class="searchbutton"></a>
+                </div>
+                <div class="resultinfo" aria-live="polite" aria-hidden="true" hidden="">
+                    You search for "<span class="query">lorem ipsum</span>" resulted in <span class="num">5</span> hits.
+                </div>
+                <div class="errormsg" aria-live="polite" aria-hidden="true" hidden="">
+                    Something went wrong, please refresh the page and try again.
+                </div>
+
+                <div class="loading" aria-hidden="true" hidden=""><div class="loader"></div><span>Searching...</span></div>
+                <div class="flypanels-searchresult" aria-hidden="true" aria-live="polite" hidden=""></div>
+            </div>
+
+
+            <div class="panelcontent" data-panel="iconmenu">
+                <nav class="flypanels-iconmenu" role="navigation">
+                    <ul>
+                        <li><a class="fa fa-github-square" href="https://github.com/SubZane/flyPanels">Github repository</a></li>
+                        <li><a class="fa fa-exclamation-circle" href="https://github.com/SubZane/flyPanels/issues">Issues</a></li>
+                        <li><a class="fa fa-download" href="https://github.com/SubZane/flyPanels/archive/master.zip">Download master</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer">
     <div class="container">
@@ -1094,7 +1184,7 @@
             </div>
             <div class="collapse navbar-collapse-footer" id="collapseExample">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4">
                         <div class="footer-menu"><span class="footer-menu-title">About METHODEXPRESS</span>
                             <ul class="menu">
                                 <li class="menu-item"><a href="#" class="nav-link">What is MethodExpress</a></li>
@@ -1115,7 +1205,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 cos-sm-3">
                         <div class="footer-menu"><span class="footer-menu-title">CLIENT</span>
                             <ul class="menu">
                                 <li class="menu-item"><a href="#" class="nav-link">Submit Request</a></li>
@@ -1126,7 +1216,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-3">
                         <div class="footer-menu"><span class="footer-menu-title">TALENT</span>
                             <ul class="menu">
                                 <li class="menu-item"><a href="#" class="nav-link">List Your Talent</a></li>
@@ -1184,6 +1274,7 @@
 <script src="assets/js/libs/jquery-3.2.1.min.js"></script>
 <script src="assets/js/libs/bootstrap.min.js"></script>
 <script src="assets/js/libs/bootstrap-select.min.js"></script>
+<script src="assets/js/libs/flypanels.all.min.js"></script>
 <script src="assets/js/libs/moment.min.js"></script>
 <script src="assets/js/daterangepicker.js"></script>
 <script src="assets/js/libs/bootstrap-dropdownhover.js"></script>

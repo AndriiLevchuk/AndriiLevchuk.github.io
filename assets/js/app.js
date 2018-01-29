@@ -1,5 +1,15 @@
 
+document.addEventListener("DOMContentLoaded", function(event) {
+    flyPanels.init({
+        onInit: function() {
+            fpm_treemenu.init();
+        },
+    })
+});
+
+
 var start = moment().subtract(29, 'days');
+
     var end = moment();
     $('#config-demo').daterangepicker({
         "linkedCalendars": false,
@@ -18,9 +28,7 @@ var start = moment().subtract(29, 'days');
         $("#config-demo").append(start + ' - ' + end);
 
     } );
-    // $("#config-demo").click(function () {
-    //     $("input[name=daterangepicker_start]").focus();
-    // });
+
     if($("input[name=daterangepicker_start]").focus()){
         $(".calendar.left .calendar-table").css("display","block");
         $(".calendar.right .calendar-table").css("display","none");
@@ -28,44 +36,7 @@ var start = moment().subtract(29, 'days');
         $(".calendar.left .calendar-table").css("display","none");
         $(".calendar.right .calendar-table").css("display","block");
     }
-    // $("#config-demo").hover(function () {
-    //     $(".daterangepicker.dropdown-menu").css("display","block");
-    // });
 
-
-    // $('ul.menu-nav li.dropdown').hover(function() {
-    //     $(this).find('ul li.dropdown:nth-child(2) ').stop(true, true).delay(200).fadeIn(500);
-    // }, function() {
-    //     $(this).find('ul li.dropdown:nth-child(2)').stop(true, true).delay(200).fadeOut(500);
-    // });
-    //
-    // //$(".dropdown-menu.open [role=combobox]").append("<div></div>");
-    //
-    // $(document).ready(function(){
-    //     $('.dropdown-submenu a.test').on("click", function(e){
-    //         $(this).next('ul').toggle();
-    //         e.stopPropagation();
-    //         e.preventDefault();
-    //     });
-    // });
-    // $(function() {
-    //
-    //     var start = moment().subtract(29, 'days');
-    //     var end = moment();
-    //
-    //     function cb(start, end) {
-    //         $('#config-demo ').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-    //     }
-    //
-    //     $('#config-demo').daterangepicker({
-    //         startDate: start,
-    //         endDate: end,
-    //
-    //     }, cb);
-    //
-    //     cb(start, end);
-    //
-    // });
     $(document).ready(function() {
 
         $('.login.owl-carousel').owlCarousel({
@@ -116,7 +87,7 @@ var start = moment().subtract(29, 'days');
                         nav:false
                     },
                     1000:{
-                        items:1,
+                        items:2,
                         nav:true,
                         loop:false
                     }
