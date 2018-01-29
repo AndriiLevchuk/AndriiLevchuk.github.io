@@ -2559,6 +2559,43 @@ span.filter-option.pull-left:before {
     font-size: 120%;
     padding-right: 0 !important;
     padding-left: 0 !important;
+    border: none;
+  }
+  .main-footer .collapse {
+    display: block;
+  }
+  .main-footer .logo-footer {
+    display: none;
+  }
+  .logo {
+    line-height: 70px;
+    width: 120px;
+  }
+  .logo .talent-card i {
+    font-size: 20px !important;
+  }
+  .logo .login {
+    margin-left: 11px !important;
+  }
+  .offcanvas.flypanels-left {
+    -webkit-box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .bootstrap-select.btn-group .dropdown-toggle .filter-option,
+  .btn.dropdown-toggle.btn-default {
+    font-size: 90%;
+  }
+  .btn.dropdown-toggle.bs-placeholder.btn-default {
+    font-size: 80%;
+  }
+  .search-form .search-form-fields .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 180px;
+  }
+  .cicle .icon-box {
+    padding: 0px !important;
+  }
+  .section_1 [class*="col-md-"] {
+    padding: 0;
   }
 }
 
@@ -2601,7 +2638,10 @@ span.filter-option.pull-left:before {
     -webkit-box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
             box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
   }
-  .bootstrap-select.btn-group .dropdown-toggle .filter-option [class*="col-md-"],
+  .bootstrap-select.btn-group .dropdown-toggle .filter-option,
+  .cicle .icon-box {
+    padding: 0px !important;
+  }
   .section_1 [class*="col-md-"] {
     padding: 0;
   }
