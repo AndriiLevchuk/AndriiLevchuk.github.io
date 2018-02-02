@@ -803,6 +803,10 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   .owl-nav
     display: none
 .card
+  display: flex
+  flex-direction: column
+  height: calc( 100vh - 100px )
+  justify-content: space-between
   box-shadow: 0px 0px 1px #000
   border: 2px solid transparent
   transition: 1s
@@ -836,7 +840,6 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
     height: 3px
     background: $red
 .card-content
-  padding: 100px 0
   text-align: center
 .card-footer
   .number
@@ -924,7 +927,7 @@ span.filter-option.pull-left
     max-width: 129px
 .arrow
   position: absolute
-  width: 140px
+  width: 120px
   top: 0
   right: 0
   padding-right: 10px
@@ -939,15 +942,15 @@ span.filter-option.pull-left
 .arrow-left
   position: absolute
 
-  width: 90px
+  width: 120px
   top: 0
   left: -211px
   padding-right: 10px
 .arrow-right
   position: absolute
-  width: 90px
-  top: 0
-  right: -211px
+  width: 80px
+  top: 5px
+  right: -192px
 .content-end
 .content-center
   justify-content: center
@@ -966,15 +969,18 @@ span.filter-option.pull-left
     padding: 0
   .arrow
     position: absolute
-    width: 100px
-    bottom: -45px
-    left: -219px
+    width: 90px
+    bottom: -40px
+    left: -202px
     padding-right: 10px
   .arrow-right
     left: 7px
-    bottom: -31px
+    bottom: -26px
     top: auto
-    width: 140px
+    width: 100px
+    left: 27px
+  .arrow-bottom
+    bottom: -47px
 .table-condensed
   .start-date
     background: $red
@@ -1147,7 +1153,7 @@ span.filter-option.pull-left
 
 .arrow
   z-index: 10
-  width: 150px
+  width: 120px
   position: absolute
 .right
   right: -120px

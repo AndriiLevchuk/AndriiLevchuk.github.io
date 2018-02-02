@@ -1342,6 +1342,21 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
 }
 
 .card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-calc( 100vh - 100px);
+  height: calc( 100vh - 100px);
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-shadow: 0px 0px 1px #000;
           box-shadow: 0px 0px 1px #000;
   border: 2px solid transparent;
@@ -1391,7 +1406,6 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
 }
 
 .card-content {
-  padding: 100px 0;
   text-align: center;
 }
 
@@ -1519,7 +1533,7 @@ span.filter-option.pull-left:before {
 
 .arrow {
   position: absolute;
-  width: 140px;
+  width: 120px;
   top: 0;
   right: 0;
   padding-right: 10px;
@@ -1539,7 +1553,7 @@ span.filter-option.pull-left:before {
 
 .arrow-left {
   position: absolute;
-  width: 90px;
+  width: 120px;
   top: 0;
   left: -211px;
   padding-right: 10px;
@@ -1547,9 +1561,9 @@ span.filter-option.pull-left:before {
 
 .arrow-right {
   position: absolute;
-  width: 90px;
-  top: 0;
-  right: -211px;
+  width: 80px;
+  top: 5px;
+  right: -192px;
 }
 
 .content-center {
@@ -1600,17 +1614,22 @@ span.filter-option.pull-left:before {
 
 .bottom .arrow {
   position: absolute;
-  width: 100px;
-  bottom: -45px;
-  left: -219px;
+  width: 90px;
+  bottom: -40px;
+  left: -202px;
   padding-right: 10px;
 }
 
 .bottom .arrow-right {
   left: 7px;
-  bottom: -31px;
+  bottom: -26px;
   top: auto;
-  width: 140px;
+  width: 100px;
+  left: 27px;
+}
+
+.bottom .arrow-bottom {
+  bottom: -47px;
 }
 
 .table-condensed .start-date {
@@ -1875,7 +1894,7 @@ span.filter-option.pull-left:before {
 
 .arrow {
   z-index: 10;
-  width: 150px;
+  width: 120px;
   position: absolute;
 }
 
@@ -2534,6 +2553,11 @@ span.filter-option.pull-left:before {
   .logo-footer {
     width: 120px;
   }
+  .select-box .icon-box {
+    padding-bottom: 0;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -2596,6 +2620,9 @@ span.filter-option.pull-left:before {
   }
   .section_1 [class*="col-md-"] {
     padding: 0;
+  }
+  .chevron {
+    margin-left: 15px;
   }
 }
 
@@ -2678,6 +2705,9 @@ span.filter-option.pull-left:before {
   }
   body {
     font-size: 120%;
+  }
+  .chevron {
+    margin-left: 25px;
   }
 }
 
