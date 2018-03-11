@@ -803,6 +803,8 @@ section {
 
 .sub-title {
   margin-left: 32px;
+  font-weight: 100;
+  line-height: normal;
 }
 
 .sub-title p {
@@ -1438,7 +1440,7 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   top: 0;
   background: url(/assets/img/me-list-style.svg);
   background-repeat: no-repeat;
-  left: -40px;
+  left: -20px;
   width: 11px;
   height: 20px;
 }
@@ -1871,6 +1873,7 @@ span.filter-option.pull-left:before {
 
 .sub-title p {
   margin-bottom: 30px;
+  line-height: 25px;
 }
 
 .p-relative {
@@ -2062,6 +2065,10 @@ span.filter-option.pull-left:before {
 
 .btn-group .btn {
   margin-right: 30px;
+}
+
+.satisfaction_img {
+  max-width: 180px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -2704,7 +2711,7 @@ span.filter-option.pull-left:before {
     line-height: 25px;
   }
   body {
-    font-size: 120%;
+    font-size: 100%;
   }
   .chevron {
     margin-left: 25px;
