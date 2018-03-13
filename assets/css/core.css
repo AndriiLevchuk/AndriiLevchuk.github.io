@@ -2296,6 +2296,12 @@ span.filter-option.pull-left:before {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .custom-table .table-header {
+    display: none;
+  }
+  .custom-table .table-cell {
+    border-left: none !important;
+  }
   .header {
     height: 70px;
     display: none;
