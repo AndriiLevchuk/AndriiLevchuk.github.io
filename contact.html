@@ -82,13 +82,6 @@
                 <div class="col-md-8">
                     <div class="section-title">Contact Us</div>
                 </div>
-                <div class="col-md-4">
-                    <ul class="uses_as">
-                        <li class="use_as"><a href="#">Log in</a></li>
-                        <li class="use_as"><a href="#">Sign up </a></li>
-                        <li class="use_as"><a href="#">GUEST</a></li>
-                    </ul>
-                </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -129,7 +122,7 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="name">Name</label>
-                                <input type="password" class="form-control" id="name" placeholder="Name">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputEmail4">Email</label>
@@ -150,7 +143,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3">
-                                <button type="submit" class="btn btn-red btn-big">Send</button>
+                                <button type="submit" class="btn btn-red btn-contact">Send</button>
                             </div>
                         </div>
                     </form>
@@ -170,23 +163,26 @@
                             <div class="contact-header">Partner Relations:</div>
                             <div class="contact-email"><a href="">partner@methodexpress.com</a></div>
                         </div>
-                        <div class="contact-location">
-                            <div class="contact-header">Canada</div>
-                            <div class="contact-data">(416) 436 25 24, 562 Alfred Hughes Ave,
-                                Oakville, Ontario,  L6M 0P2 </div>
-                        </div>
-                        <div class="contact-location">
-                            <div class="contact-header">Jordan</div>
-                            <div class="contact-data">(962 6) 515 28 02, Suite 807, Abu Al
-                                Haj Complex, Queen Rania Street, Amman
+                        <div class="address-wrap">
+                            <div class="contact-location">
+                                <div class="contact-header">Canada</div>
+                                <div class="contact-data">(416) 436 25 24, 562 Alfred Hughes Ave,
+                                    Oakville, Ontario,  L6M 0P2 </div>
+                            </div>
+                            <div class="contact-location">
+                                <div class="contact-header">Jordan</div>
+                                <div class="contact-data">(962 6) 515 28 02, Suite 807, Abu Al
+                                    Haj Complex, Queen Rania Street, Amman
+                                </div>
+                            </div>
+                            <div class="contact-location">
+                                <div class="contact-header">Saudi Arabia</div>
+                                <div class="contact-data">(966 11) 530 563 563, Suite 703, 3rd
+                                    Akaria Complex, Main Olia Street, Riyadh
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-location">
-                            <div class="contact-header">Saudi Arabia</div>
-                            <div class="contact-data">(966 11) 530 563 563, Suite 703, 3rd
-                                Akaria Complex, Main Olia Street, Riyadh
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -202,6 +198,12 @@
 
     #contact-form button{
         width: 100%;
+    }
+    #contact-form{
+        padding-bottom: 30px;
+    }
+    #contact-form textarea{
+        resize: none;
     }
     .form-group label{
         font-size: 0.8em;
@@ -221,6 +223,7 @@
     .form-group{
         margin-bottom: 1.5rem;
     }
+
     .contact-info{
         padding-left: 15px;
         border-left: 2px solid #e91150;
@@ -244,6 +247,9 @@
         font-weight: 100;
         color: #e91150;
     }
+    .address-wrap{
+        /*background: grey;*/
+    }
     .contact-location{
         padding: 0.5rem 0.5rem 0.5rem 15px;
         margin: 38px 0rem 0px 0rem;
@@ -251,6 +257,9 @@
     }
     .contact-location .contact-header{
         text-transform: uppercase;
+    }
+    .btn-contact{
+        padding: 1rem;
     }
     .contact-logo{
         width: 150px;

@@ -1430,6 +1430,10 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   height: 120px;
 }
 
+.list, .list-question {
+  margin-left: 20px;
+}
+
 .list {
   position: relative;
 }
@@ -2068,6 +2072,10 @@ span.filter-option.pull-left:before {
 }
 
 .satisfaction_img {
+  text-align: center;
+}
+
+.satisfaction_img img {
   max-width: 180px;
 }
 
@@ -2491,10 +2499,13 @@ span.filter-option.pull-left:before {
   .section_5 .icon-box-wide-item .icon-box-image {
     width: 120px;
   }
-  .section_7 .list {
+  .list, .list-question {
+    margin-left: 20px;
+  }
+  .section_7 {
     padding-left: 20px;
   }
-  .section_7 .list:before {
+  .section_7:before {
     left: 0px;
     top: 2px;
   }
