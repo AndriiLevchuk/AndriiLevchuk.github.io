@@ -61,7 +61,7 @@ strong {
   font-family: 'Prompt Medium';
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/din-pro-cond/prompt-v2-latin-regular.woff") format("woff");
+  src: url("../fonts/prompt/prompt-v2-latin-regular.woff") format("woff");
 }
 
 @font-face {

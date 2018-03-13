@@ -1,11 +1,13 @@
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    document.addEventListener("DOMContentLoaded", function(event) {
+        flyPanels.init({
+            onInit: function() {
+                fpm_treemenu.init();
+            },
+        })
+    });
+}
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    flyPanels.init({
-        onInit: function() {
-            fpm_treemenu.init();
-        },
-    })
-});
 
 
 var start = moment().subtract(29, 'days');
