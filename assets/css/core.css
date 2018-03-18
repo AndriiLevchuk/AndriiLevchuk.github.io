@@ -2756,6 +2756,7 @@ label.radio {
 }
 
 .form-control-date {
+  font-size: 13px;
   letter-spacing: 1px;
   padding: 0.5rem;
   max-width: 105px;
