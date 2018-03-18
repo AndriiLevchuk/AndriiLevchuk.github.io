@@ -40,6 +40,25 @@ var start = moment().subtract(29, 'days');
     }
 
     $(document).ready(function() {
+        var extraObj = $("#fileuploader").uploadFile({
+            url:"http://hayageek.com/examples/jquery/ajax-multiple-file-upload/upload.php",
+            fileName:"myfile",
+            autoSubmit:false,
+
+
+        });
+        $("#uploadbutton").on('click', function () {
+            extraObj.startUpload();
+        });
+        var start = moment().subtract(29, 'days');
+        var end = moment();
+
+        $('.form-control-date').daterangepicker({
+            startDate: start,
+            endDate: end,
+            singleDatePicker: true,
+            showDropdowns: true
+        });
 
         $('.login.owl-carousel').owlCarousel({
             loop:false,

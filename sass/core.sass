@@ -473,6 +473,9 @@ section
   line-height: normal
   p
     margin-top: 25px
+  a
+    color: red
+    text-decoration: underline
 .sub-p
   font-size: 16px
   margin-left: 32px
@@ -562,6 +565,22 @@ section
 .picker
   height: 195px
   display: flex
+  .monthselect, .yearselect
+    -webkit-appearance: button
+    padding: 5px
+    -webkit-appearance: button
+    -webkit-border-radius: 2px
+    -webkit-box-shadow: none
+    -webkit-padding-end: 20px
+    -webkit-padding-start: 2px
+    -webkit-user-select: none
+    background-image: url('../img/caret-down.png')
+    background-position: 97% center
+    background-repeat: no-repeat
+    background-size: 8px
+    border: navajowhite
+    margin-right: 10px
+    margin-left: 10px
 .dropdown-menu
   border: none
   border-radius: 0px
@@ -663,7 +682,9 @@ btn-default:active.focus, .search-form .search-form-fields .btn-default:active:f
   border-right: 14px solid transparent
   border-bottom: 14px solid white
   z-index: 100000000000
-
+.daterangepicker.dropdown-menu.ltr.single.show-calendar.opensright:before,
+.daterangepicker.dropdown-menu.ltr.single.show-calendar.opensright:after
+  display: none
 .daterangepicker.dropdown-menu
   margin-top: 2px!important
 
@@ -1248,7 +1269,10 @@ span.filter-option.pull-left
 .btn-red
   color: $main-white
   background-color: $red
-.btn-red
+.btn-big-stone
+  color: white
+  background-color: $big-stone
+.btn-red, .btn-big-stone
   &:hover
     color: $main-white
   &:focus
@@ -1268,4 +1292,6 @@ span.filter-option.pull-left
 
   img
     max-width: 180px
+
+@import "pages/pages"
 @import "media"
