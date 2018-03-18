@@ -2756,6 +2756,7 @@ label.radio {
 }
 
 .form-control-date {
+  letter-spacing: 1px;
   padding: 0.5rem;
   max-width: 105px;
   background: #e91150;
@@ -2781,6 +2782,13 @@ label.radio {
   border-top: 8px dashed red;
   border-right: 8px solid transparent;
   border-left: 8px solid transparent;
+}
+
+.form-select .dropup .caret, .form-select .navbar-fixed-bottom .dropdown .caret {
+  content: "";
+  border-top: 0;
+  border-bottom: 8px dashed red;
+  border-bottom: 8px solid\9;
 }
 
 .form-select .btn.dropdown-toggle {
