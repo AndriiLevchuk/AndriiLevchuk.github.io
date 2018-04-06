@@ -1292,6 +1292,66 @@ span.filter-option.pull-left
 
   img
     max-width: 180px
+//talent-nfo
+//colors
+$color_red_ribbon_approx: #e80a4d
+$color_gallery_approx: #eeeeee
+
+.talent-block-info
+  font-size: 18px
+  padding-top: 100px
+  a
+    color: $color_red_ribbon_approx
+
+  ul
+    line-height: 30px
+    padding-left: 30px
+    list-style: disc
+
+  p.phone
+    margin-bottom: 10px
+
+  .talent-info-footer p
+    margin-bottom: 10px
+
+
+.talent-person-info-body
+  max-width: 215px
+  display: inline-block
+  text-align: left
+  line-height: 30px
+
+.talent-info
+  border-left: 1px solid $color_gallery_approx
+  padding-left: 50px
+
+.talent-info-body
+  margin-bottom: 30px
+  p:not(.phone)
+    margin-bottom: 30px
+    line-height: 30px
+
+
+@media screen and (min-width: 320px) and (max-width: 1024px)
+  .talent-info
+    padding-left: 20px
+    margin-top: 30px
+
+  .talent-person-info-body
+    max-width: 100%
+    display: block
+    text-align: left
+    line-height: 30px
+
+
+.talent-person-info .person-image img
+  width: 180px
+  height: 185px
+  display: inline-block
+  margin-bottom: 70px
+
+.talent-info-footer div:first-child
+  margin-bottom: 30px
 
 @import "pages/pages"
 @import "media"
