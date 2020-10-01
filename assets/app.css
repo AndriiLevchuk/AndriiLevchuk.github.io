@@ -220,8 +220,12 @@ p {
     width: 50%;
 }
 .brand {
+	font-family: GaramondPremierProSemiboldCaption, sans-serif;
+	font-size: 65px;
+	color: #fff;
     margin-bottom: 41px;
     max-width: 320px;
+    position: relative;
 }
 .brand img {
     position: relative;
