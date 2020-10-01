@@ -1,1 +1,328 @@
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}@font-face{font-family:GaramondPremierProSemiboldCaption;src:url(fonts/GaramondPremierProBoldCaption.eot);src:url(fonts/GaramondPremierProBoldCaptioneot?#iefix) format("embedded-opentype"),url(fonts/GaramondPremierProBoldCaption.woff2) format("woff2"),url(fonts/GaramondPremierProBoldCaption.woff) format("woff"),url(fonts/GaramondPremierProBoldCaption.ttf) format("truetype"),url("fonts/GaramondPremierProBoldCaption.svg#Garamond Premier Pro Semibold Italic Caption") format("svg");font-display:swap}@font-face{font-family:'Futura PT';src:url(fonts/FuturaPT-Medium.eot);src:local('Futura PT Medium'),local('FuturaPT-Medium'),url(fonts/FuturaPT-Medium.eot?#iefix) format('embedded-opentype'),url(fonts/FuturaPT-Medium.woff2) format('woff2'),url(fonts/FuturaPT-Medium.woff) format('woff'),url(fonts/FuturaPT-Medium.ttf) format('truetype');font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:'Futura PT Book';src:url(FuturaPT-Book.eot);src:local('Futura PT Book'),local('FuturaPT-Book'),url(FuturaPT-Book.eot?#iefix) format('embedded-opentype'),url(FuturaPT-Book.woff2) format('woff2'),url(FuturaPT-Book.woff) format('woff'),url(FuturaPT-Book.ttf) format('truetype');font-weight:400;font-style:normal;font-display:swap}b{font-family:'Futura PT';font-weight:500}p{font-family:Futura PT Book,sans-serif}.hold{position:relative;min-height:calc(100vh - 108px);background-image:url(images/bg-desktop.png);background-repeat:no-repeat;background-position:center;background-size:cover;padding-top:108px}.hold::before{position:absolute;content:"";width:100%;height:100%;background:rgba(0,0,0,.2);left:0;right:0;top:0;bottom:0;z-index:0}.hold__container{max-width:964px;margin-right:auto;margin-left:auto;padding:0 15px}.hold blockquote{font-family:GaramondPremierProSemiboldCaption,sans-serif;position:relative;font-size:24px;color:#fff;letter-spacing:1.2px;line-height:30px;max-width:284px;margin-left:47px;padding-left:17px;margin-bottom:60px}.hold blockquote::before{position:absolute;content:"";background-color:#fff;width:2px;height:calc(100% + 10px);top:0;left:0;bottom:0;margin-top:auto;margin-bottom:auto}.hold p{font-size:14px;color:#fff;letter-spacing:.5px;line-height:16px;margin-bottom:1.5rem}.grid{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}.grid__half{width:50%}.brand{margin-bottom:41px;max-width:320px}.brand img{position:relative;width:100%}.contact-info{margin-left:64px}.contact-info__title{font-family:Futura PT,sans-serif;font-weight:500;font-size:14px;color:#fff;letter-spacing:.5px;line-height:16px;text-transform:uppercase;margin-bottom:4px}.contact-info__list a{font-family:GaramondPremierProSemiboldCaption,sans-serif;font-size:16px;color:#fff;letter-spacing:.5px;line-height:30px;text-decoration:none}.contact-info__list a i{-webkit-transition:margin .5s;-o-transition:margin .5s;transition:margin .5s}.contact-info__list a:hover i{margin-right:18px;-webkit-transition:margin .5s;-o-transition:margin .5s;transition:margin .5s}.i-phone{display:inline-block;width:14px;height:14px;background-image:url(images/icons/phone.svg);margin-right:14px}.i-email{display:inline-block;width:17px;height:12px;background-image:url(images/icons/envelop.svg);margin-right:14px}.hold__dsc{max-width:441px}@media screen and (max-width:920px){.hold__container{max-width:595px}.brand{max-width:264px}.hold blockquote{font-size:20px;letter-spacing:1px;line-height:24px;margin-left:0;max-width:253px}.contact-info{margin-left:17px}.hold__dsc{max-width:282px}}@media screen and (max-width:767px){.hold{padding-top:50px}.hold__container{max-width:311px}.brand{max-width:211px}.hold blockquote{max-width:100%;margin-bottom:19px}.grid{-ms-flex-wrap:wrap;flex-wrap:wrap}.grid__half{width:100%}.contact-info{margin-bottom:19px;margin-left:0}.hold__dsc{max-width:100%}}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+@font-face {
+    font-family: GaramondPremierProSemiboldCaption;
+    src: url(fonts/GaramondPremierProBoldCaption.eot);
+    src: url(fonts/GaramondPremierProBoldCaptioneot?#iefix) format("embedded-opentype"), url(fonts/GaramondPremierProBoldCaption.woff2) format("woff2"), url(fonts/GaramondPremierProBoldCaption.woff) format("woff"),
+        url(fonts/GaramondPremierProBoldCaption.ttf) format("truetype"), url("fonts/GaramondPremierProBoldCaption.svg#Garamond Premier Pro Semibold Italic Caption") format("svg");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Futura PT";
+    src: url(fonts/FuturaPT-Medium.eot);
+    src: local("Futura PT Medium"), local("FuturaPT-Medium"), url(fonts/FuturaPT-Medium.eot?#iefix) format("embedded-opentype"), url(fonts/FuturaPT-Medium.woff2) format("woff2"), url(fonts/FuturaPT-Medium.woff) format("woff"),
+        url(fonts/FuturaPT-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Futura PT Book";
+    src: url(fonts/FuturaPT-Book.eot);
+    src: local("Futura PT Book"), local("fonts/FuturaPT-Book"), url(fonts/FuturaPT-Book.eot?#iefix) format("embedded-opentype"), url(fonts/FuturaPT-Book.woff2) format("woff2"), url(fonts/FuturaPT-Book.woff) format("woff"), url(FuturaPT-Book.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+b {
+    font-family: "Futura PT";
+    font-weight: 500;
+}
+p {
+    font-family: Futura PT Book, sans-serif;
+}
+.hold {
+    position: relative;
+    min-height: calc(100vh - 108px);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 108px;
+}
+.hold::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.hold__container {
+    max-width: 964px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+.hold blockquote {
+    font-family: GaramondPremierProSemiboldCaption, sans-serif;
+    position: relative;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    max-width: 284px;
+    margin-left: 47px;
+    padding-left: 17px;
+    margin-bottom: 60px;
+}
+.hold blockquote::before {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 2px;
+    height: calc(100% + 10px);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.hold p {
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    margin-bottom: 1.5rem;
+}
+.grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+.grid__half {
+    width: 50%;
+}
+.brand {
+    margin-bottom: 41px;
+    max-width: 320px;
+}
+.brand img {
+    position: relative;
+    width: 100%;
+}
+.contact-info {
+    margin-left: 64px;
+}
+.contact-info__title {
+    font-family: Futura PT, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.contact-info__list a {
+    font-family: GaramondPremierProSemiboldCaption, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    text-decoration: none;
+}
+.contact-info__list a i {
+    -webkit-transition: margin 0.5s;
+    -o-transition: margin 0.5s;
+    transition: margin 0.5s;
+}
+.contact-info__list a:hover i {
+    margin-right: 18px;
+    -webkit-transition: margin 0.5s;
+    -o-transition: margin 0.5s;
+    transition: margin 0.5s;
+}
+.i-phone {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(images/icons/phone.svg);
+    margin-right: 14px;
+}
+.i-email {
+    display: inline-block;
+    width: 17px;
+    height: 12px;
+    background-image: url(images/icons/envelop.svg);
+    margin-right: 14px;
+}
+.hold__dsc {
+    max-width: 441px;
+}
+@media screen and (max-width: 920px) {
+    .hold__container {
+        max-width: 595px;
+    }
+    .brand {
+        max-width: 264px;
+    }
+    .hold blockquote {
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        margin-left: 0;
+        max-width: 253px;
+    }
+    .contact-info {
+        margin-left: 17px;
+    }
+    .hold__dsc {
+        max-width: 282px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .hold {
+        padding-top: 50px;
+    }
+    .hold__container {
+        max-width: 311px;
+    }
+    .brand {
+        max-width: 211px;
+    }
+    .hold blockquote {
+        max-width: 100%;
+        margin-bottom: 19px;
+    }
+    .grid {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .grid__half {
+        width: 100%;
+    }
+    .contact-info {
+        margin-bottom: 19px;
+        margin-left: 0;
+    }
+    .hold__dsc {
+        max-width: 100%;
+    }
+}
