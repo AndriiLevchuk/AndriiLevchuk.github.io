@@ -122,10 +122,10 @@ table {
     border-spacing: 0;
 }
 @font-face {
-    font-family: GaramondPremierProSemiboldCaption;
-    src: url(fonts/GaramondPremierProBoldCaption.eot);
-    src: url(fonts/GaramondPremierProBoldCaptioneot?#iefix) format("embedded-opentype"), url(fonts/GaramondPremierProBoldCaption.woff2) format("woff2"), url(fonts/GaramondPremierProBoldCaption.woff) format("woff"),
-        url(fonts/GaramondPremierProBoldCaption.ttf) format("truetype"), url("fonts/GaramondPremierProBoldCaption.svg#Garamond Premier Pro Semibold Italic Caption") format("svg");
+    font-family: GaramondPremierProCaption;
+    src: url(fonts/GaramondPremierProCaption.eot);
+    src: url(fonts/GaramondPremierProCaption.eot?#iefix) format("embedded-opentype"), url(fonts/GaramondPremierProCaption.woff2) format("woff2"), url(fonts/GaramondPremierProCaption.woff) format("woff"),
+        url(fonts/GaramondPremierProCaption.ttf) format("truetype"), url("fonts/GaramondPremierProCaption.svg#Garamond Premier Pro Semibold Italic Caption") format("svg");
     font-display: swap;
 }
 @font-face {
@@ -220,7 +220,7 @@ p {
     width: 50%;
 }
 .brand {
-	font-family: GaramondPremierProSemiboldCaption, sans-serif;
+	font-family: GaramondPremierProCaption, sans-serif;
 	font-size: 65px;
 	color: #fff;
     margin-bottom: 41px;
@@ -245,7 +245,7 @@ p {
     margin-bottom: 4px;
 }
 .contact-info__list a {
-    font-family: GaramondPremierProSemiboldCaption, sans-serif;
+    font-family: GaramondPremierProCaption, sans-serif;
     font-size: 16px;
     color: #fff;
     letter-spacing: 0.5px;
