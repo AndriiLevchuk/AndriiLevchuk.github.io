@@ -304,6 +304,7 @@ p {
 @media screen and (max-width: 767px) {
     .hold {
         padding-top: 50px;
+        height: calc(100vh - 50px)
     }
     .hold__container {
         max-width: 311px;
