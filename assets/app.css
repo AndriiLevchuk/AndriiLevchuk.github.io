@@ -190,11 +190,12 @@ p {
     margin-left: 47px;
     padding-left: 17px;
     margin-bottom: 60px;
+    color: #e5bb57;
 }
 .hold blockquote::before {
     position: absolute;
     content: "";
-    background-color: #fff;
+    background-color: #e5bb57;
     width: 2px;
     height: calc(100% + 10px);
     top: 0;
@@ -256,6 +257,7 @@ p {
     -webkit-transition: margin 0.5s;
     -o-transition: margin 0.5s;
     transition: margin 0.5s;
+    color: #e5bb57;
 }
 .contact-info__list a:hover i {
     margin-right: 18px;
